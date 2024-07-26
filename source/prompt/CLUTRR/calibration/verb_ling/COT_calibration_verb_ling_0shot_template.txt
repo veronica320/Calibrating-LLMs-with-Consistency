@@ -1,0 +1,4 @@
+Context: [QUESTION]
+Answer:
+[REASONING_CHAIN]
+How confident are you in the above answer? (choose from "Almost no chance", "Highly unlikely", "Unlikely", "Probably not", "About even", "Better than even", "Likely", "Probably", "Highly likely", "Almost certain"):

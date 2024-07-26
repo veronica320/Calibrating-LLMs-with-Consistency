@@ -1,0 +1,231 @@
+// Q: Are there any chives hypothetically good for battling vampires?
+
+// To answer this question, we answer the following subquestions:
+// 1. What are some plants that are hypothetically good for battling vampires?
+// Some plants that are hypothetically good for battling vampires include garlic, hawthorn, and chives.
+// Then, we represent these answers in Datalog:
+// 1. Some plants that are hypothetically good for battling vampires include garlic, hawthorn, and chives.
+.decl Hypothetically_good_for_battling_vampires(Plant:symbol)
+Hypothetically_good_for_battling_vampires("garlic").
+Hypothetically_good_for_battling_vampires("hawthorn").
+Hypothetically_good_for_battling_vampires("chives").
+// Now, we derive the final answer: Are there any chives hypothetically good for battling vampires?
+// The answer is Yes only if chives are hypothetically good for battling vampires.
+.decl Answer()
+Answer() :- Hypothetically_good_for_battling_vampires("chives").
+.output Answer
+
+Execution result: true
+Is the above answer correct? (Yes/No): Yes
+
+
+// Q: Do moths that live on sloths have family dinners?
+
+// To answer this question, we answer the following subquestions:
+// 1. What animals do moths live on?
+// Moths live on sloths.
+// 2. Do sloths have family dinners?
+// Sloths have family dinners.
+// Then, we represent these answers in Datalog:
+// 1. Moths live on sloths.
+.decl Lives_on(Animal_A:symbol, Animal_B:symbol)
+Lives_on("moth", "sloth").
+// 2. Sloths have family dinners.
+.decl Has_family_dinner(Animal:symbol)
+Has_family_dinner("sloth").
+// Now, we derive the final answer: Do moths that live on sloths have family dinners?
+// The answer is Yes only if there exists an animal that moths live on and the animal has family dinners.
+.decl Answer()
+Answer() :- Lives_on("moth", animal), Has_family_dinner(animal).
+.output Answer
+
+Execution result: true
+Is the above answer correct? (Yes/No): No
+
+
+// Q: Did Lionel Richie ever have dinner with Abraham Lincoln?
+
+// To answer this question, we answer the following subquestions:
+// 1. When did Lionel Richie live?
+// Lionel Richie lived from 1949 to present.
+// 2. When did Abraham Lincoln live?
+// Abraham Lincoln lived from 1809 to 1865.
+// 3. When did Lionel Richie and Abraham Lincoln live at the same time?
+// Lionel Richie and Abraham Lincoln lived at the same time from 1949 to 1865.
+// Then, we represent these answers in Datalog:
+// 1. Lionel Richie lived from 1949 to present.
+.decl Lives_from_to(Person:symbol, Year_start:float, Year_end:float)
+Lives_from_to("Lionel Richie", 1949, present).
+// 2. Abraham Lincoln lived from 1809 to 1865.
+Lives_from_to("Abraham Lincoln", 1809, 1865).
+// 3. Lionel Richie and Abraham Lincoln lived at the same time from 1949 to 1865.
+.decl Lives_at_same_time(Person1:symbol, Person2:symbol, Year_start:float, Year_end:float)
+Lives_at_same_time("Lionel Richie", "Abraham Lincoln", 1949, 1865).
+// Now, we derive the final answer: Did Lionel Richie ever have dinner with Abraham Lincoln?
+// The answer is Yes only if Lionel Richie and Abraham Lincoln lived at the same time.
+.decl Answer()
+Answer() :- Lives_at_same_time("Lionel Richie", "Abraham Lincoln", year_start, year_end).
+.output Answer
+
+Execution result: false
+Is the above answer correct? (Yes/No): Yes
+
+
+// Q: Was milliner in Alice in Wonderland (1951 film) likely in need of succimer?
+
+// To answer this question, we answer the following subquestions:
+// 1. What is the occupation of milliner?
+// A milliner is a person who makes, designs, or sells hats.
+// 2. What is the definition of succimer?
+// Succimer is a drug used to treat heavy metal poisoning.
+// 3. What is the definition of heavy metal poisoning?
+// Heavy metal poisoning is the toxic accumulation of heavy metals in the soft tissues of the body.
+// 4. What are the symptoms of heavy metal poisoning?
+// The symptoms of heavy metal poisoning include nausea, vomiting, diarrhea, abdominal pain, and headache.
+// 5. What are the symptoms of Alice in Wonderland (1951 film)?
+// The symptoms of Alice in Wonderland (1951 film) include hallucinations, confusion, and delirium.
+// 6. What are the symptoms of milliner?
+// The symptoms of milliner include nausea, vomiting, diarrhea, abdominal pain, and headache.
+// Then, we represent these answers in Datalog:
+// 1. A milliner is a person who makes, designs, or sells hats.
+.decl Is_occupation(Occupation:symbol, Definition:symbol)
+Is_occupation("milliner", "person who makes, designs, or sells hats").
+// 2. Succimer is a drug used to treat heavy metal poisoning.
+.decl Is_definition(Definition:symbol, Drug:symbol)
+Is_definition("drug used to treat heavy metal poisoning", "succimer").
+// 3. Heavy metal poisoning is the toxic accumulation of heavy metals in the soft tissues of the body.
+Is_definition("toxic accumulation of heavy metals in the soft tissues of the body", "heavy metal poisoning").
+// 4. The symptoms of heavy metal poisoning include nausea, vomiting, diarrhea, abdominal pain, and headache.
+.decl Has_symptom(Disease:symbol, Symptom:symbol)
+Has_symptom("heavy metal poisoning", "nausea").
+Has_symptom("heavy metal poisoning", "vomiting").
+Has_symptom("heavy metal poisoning", "diarrhea").
+Has_symptom("heavy metal poisoning", "abdominal pain").
+Has_symptom("heavy metal poisoning", "headache").
+// 5. The symptoms of Alice in Wonderland (1951 film) include hallucinations, confusion, and delirium.
+Has_symptom("Alice in Wonderland (1951 film)", "hallucinations").
+Has_symptom("Alice in Wonderland (1951 film)", "confusion").
+Has_symptom("Alice in Wonderland (1951 film)", "delirium").
+// 6. The symptoms of milliner include nausea, vomiting, diarrhea, abdominal pain, and headache.
+Has_symptom("milliner", "nausea").
+Has_symptom("milliner", "vomiting").
+Has_symptom("milliner", "diarrhea").
+Has_symptom("milliner", "abdominal pain").
+Has_symptom("milliner", "headache").
+// Now, we derive the final answer: Was milliner in Alice in Wonderland (1951 film) likely in need of succimer?
+// The answer is Yes only if the symptoms of milliner are the same as the symptoms of heavy metal poisoning, and the symptoms of Alice in Wonderland (1951 film) are not the same as the symptoms of heavy metal poisoning.
+.decl Answer()
+Answer() :- Has_symptom("milliner", symptom1), Has_symptom("heavy metal poisoning", symptom1), Has_symptom("Alice in Wonderland (1951 film)",
+
+Execution result: false
+Is the above answer correct? (Yes/No): No
+
+
+// Q: Was being a mail carrier considered one of the most dangerous jobs?
+
+// To answer this question, we answer the following subquestions:
+// 1. What is the fatality rate of being a mail carrier?
+// The fatality rate of being a mail carrier is about 20.5 per 100,000.
+// 2. What is the fatality rate of being a fisherman?
+// The fatality rate of being a fisherman is about 117.0 per 100,000.
+// 3. What is the fatality rate of being a logger?
+// The fatality rate of being a logger is about 127.8 per 100,000.
+// 4. What is the fatality rate of being a pilot?
+// The fatality rate of being a pilot is about 53.4 per 100,000.
+// 5. What is the fatality rate of being a roofer?
+// The fatality rate of being a roofer is about 52.5 per 100,000.
+// 6. What is the fatality rate of being a sanitation worker?
+// The fatality rate of being a sanitation worker is about 34.1 per 100,000.
+// 7. What is the fatality rate of being a steelworker?
+// The fatality rate of being a steelworker is about 38.7 per 100,000.
+// Then, we represent these answers in Datalog:
+// 1. The fatality rate of being a mail carrier is about 20.5 per 100,000.
+.decl Has_fatality_rate(Job:symbol, Fatality_rate:float)
+Has_fatality_rate("mail carrier", 20.5).
+// 2. The fatality rate of being a fisherman is about 117.0 per 100,000.
+Has_fatality_rate("fisherman", 117.0).
+// 3. The fatality rate of being a logger is about 127.8 per 100,000.
+Has_fatality_rate("logger", 127.8).
+// 4. The fatality rate of being a pilot is about 53.4 per 100,000.
+Has_fatality_rate("pilot", 53.4).
+// 5. The fatality rate of being a roofer is about 52.5 per 100,000.
+Has_fatality_rate("roofer", 52.5).
+// 6. The fatality rate of being a sanitation worker is about 34.1 per 100,000.
+Has_fatality_rate("sanitation worker", 34.1).
+// 7. The fatality rate of being a steelworker is about 38.7 per 100,000.
+Has_fatality_rate("steelworker", 38.7).
+// Now, we derive the final answer: Was being a mail carrier considered one of the most dangerous jobs?
+// The answer is Yes only if the fatality rate of being a mail carrier is more than the fatality rate of being a sanitation worker.
+.decl Answer()
+Answer() :- Has_fatality_rate("mail carrier", fatality_rate1), Has_fatality_rate("sanitation worker", fatality_rate2), fatality_rate1 > fatality_rate2.
+.output Answer
+
+Execution result: false
+Is the above answer correct? (Yes/No): No
+
+
+// Q: Was ship that recovered Apollo 13 named after a World War II battle?
+
+// To answer this question, we answer the following subquestions:
+// 1. What was the name of the ship that recovered Apollo 13?
+// The ship that recovered Apollo 13 was named USS Iwo Jima.
+// 2. Was there a World War II battle named after USS Iwo Jima?
+// Yes, there was a World War II battle named after USS Iwo Jima.
+// Then, we represent these answers in Datalog:
+// 1. The ship that recovered Apollo 13 was named USS Iwo Jima.
+.decl Recovers(Ship:symbol, Event:symbol)
+Recovers("USS Iwo Jima", "Apollo 13").
+// 2. Yes, there was a World War II battle named after USS Iwo Jima.
+.decl Named_after(Ship:symbol, Battle:symbol)
+Named_after("USS Iwo Jima", "World War II battle").
+// Now, we derive the final answer: Was ship that recovered Apollo 13 named after a World War II battle?
+// The answer is Yes only if the ship that recovered Apollo 13 was named after a World War II battle.
+.decl Answer()
+Answer() :- Recovers(ship, "Apollo 13"), Named_after(ship, "World War II battle").
+.output Answer
+
+Execution result: true
+Is the above answer correct? (Yes/No): Yes
+
+
+// Q: Have the Israelis played the Hammerstein Ballroom?
+
+// To answer this question, we answer the following subquestions:
+// 1. What is the name of the band that played the Hammerstein Ballroom?
+// The band that played the Hammerstein Ballroom is called "The Israelis".
+// Then, we represent these answers in Datalog:
+// 1. The band that played the Hammerstein Ballroom is called "The Israelis".
+.decl Plays(Band:symbol, Venue:symbol)
+Plays("The Israelis", "Hammerstein Ballroom").
+// Now, we derive the final answer: Have the Israelis played the Hammerstein Ballroom?
+// The answer is Yes only if the band that played the Hammerstein Ballroom is called "The Israelis".
+.decl Answer()
+Answer() :- Plays("The Israelis", "Hammerstein Ballroom").
+.output Answer
+
+Execution result: true
+Is the above answer correct? (Yes/No): No
+
+
+// Q: Could the Jackson 5 play a full game of rugby with each other?
+
+// To answer this question, we answer the following subquestions:
+// 1. How many members are there in the Jackson 5?
+// The Jackson 5 has 5 members.
+// 2. How many players are there in a rugby team?
+// A rugby team has 15 players.
+// Then, we represent these answers in Datalog:
+// 1. The Jackson 5 has 5 members.
+.decl Has_n_members(Group:symbol, N_members:float)
+Has_n_members("Jackson 5", 5).
+// 2. A rugby team has 15 players.
+.decl Has_n_players(Team:symbol, N_players:float)
+Has_n_players("rugby", 15).
+// Now, we derive the final answer: Could the Jackson 5 play a full game of rugby with each other?
+// The answer is Yes only if the number of members in the Jackson 5 is more than the number of players in a rugby team.
+.decl Answer()
+Answer() :- Has_n_members("Jackson 5", n_members1), Has_n_players("rugby", n_players2), n_members1 > n_players2.
+.output Answer
+
+Execution result: false
+Is the above answer correct? (Yes/No): Yes

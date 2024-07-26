@@ -1,0 +1,91 @@
+Q: Are there any chives hypothetically good for battling vampires?
+A: To answer this question, we need to answer the following subquestions:
+Q1. Are chives good for battling vampires?
+Chives are good for battling vampires.
+Final answer: Are there any chives hypothetically good for battling vampires?
+The answer is yes.
+Answer: true
+Is the above answer correct? (Yes/No): Yes
+
+Q: Do moths that live on sloths have family dinners?
+A: To answer this question, we need to answer the following subquestions:
+Q1. Do moths have families?
+Moths have families.
+Q2. Do moths that live on sloths have families?
+Moths that live on sloths have families.
+Q3. Do moths that live on sloths have family dinners?
+Moths that live on sloths have family dinners.
+Final answer: Do moths that live on sloths have family dinners?
+The answer is yes.
+Answer: true
+Is the above answer correct? (Yes/No): No
+
+Q: Did Lionel Richie ever have dinner with Abraham Lincoln?
+A: To answer this question, we need to answer the following subquestions:
+Q1. When did Abraham Lincoln live?
+Abraham Lincoln lived from 1809 to 1865.
+Q2. When was Lionel Richie born?
+Lionel Richie was born in 1949.
+Q3. Did Lionel Richie ever have dinner with Abraham Lincoln?
+Lionel Richie was born in 1949, and Abraham Lincoln lived from 1809 to 1865, so Lionel Richie never had dinner with Abraham Lincoln.
+Final answer: Did Lionel Richie ever have dinner with Abraham Lincoln?
+The answer is no.
+Answer: false
+Is the above answer correct? (Yes/No): Yes
+
+Q: Was milliner in Alice in Wonderland (1951 film) likely in need of succimer?
+A: To answer this question, we need to answer the following subquestions:
+Q1. What is a milliner?
+A milliner is a person who makes hats.
+Q2. What is succimer?
+Succimer is a drug used to treat heavy metal poisoning.
+Q3. Is a milliner likely to be exposed to heavy metals?
+A milliner is not likely to be exposed to heavy metals.
+Final answer: Was milliner in Alice in Wonderland (1951 film) likely in need of succimer?
+The answer is no.
+Answer: false
+Is the above answer correct? (Yes/No): No
+
+Q: Was being a mail carrier considered one of the most dangerous jobs?
+A: To answer this question, we need to answer the following subquestions:
+Q1. What is the most dangerous job?
+The most dangerous job is logging.
+Q2. Is being a mail carrier more dangerous than logging?
+Being a mail carrier is less dangerous than logging.
+Final answer: Was being a mail carrier considered one of the most dangerous jobs?
+The answer is no.
+Answer: false
+Is the above answer correct? (Yes/No): No
+
+Q: Was ship that recovered Apollo 13 named after a World War II battle?
+A: To answer this question, we need to answer the following subquestions:
+Q1. What was the name of the ship that recovered Apollo 13?
+The ship that recovered Apollo 13 was the USS Iwo Jima.
+Q2. Was the Battle of Iwo Jima during World War II?
+The Battle of Iwo Jima was during World War II.
+Final answer: Was ship that recovered Apollo 13 named after a World War II battle?
+The answer is yes.
+Answer: true
+Is the above answer correct? (Yes/No): Yes
+
+Q: Have the Israelis played the Hammerstein Ballroom?
+A: To answer this question, we need to answer the following subquestions:
+Q1. Who are the Israelis?
+The Israelis are a band.
+Q2. Have the Israelis played the Hammerstein Ballroom?
+The Israelis have played the Hammerstein Ballroom.
+Final answer: Have the Israelis played the Hammerstein Ballroom?
+The answer is yes.
+Answer: true
+Is the above answer correct? (Yes/No): No
+
+Q: Could the Jackson 5 play a full game of rugby with each other?
+A: To answer this question, we need to answer the following subquestions:
+Q1. How many members are there in the Jackson 5?
+There are 5 members in the Jackson 5.
+Q2. How many players are there in a rugby team?
+There are 15 players in a rugby team.
+Final answer: Could the Jackson 5 play a full game of rugby with each other?
+The answer is no.
+Answer: false
+Is the above answer correct? (Yes/No): Yes

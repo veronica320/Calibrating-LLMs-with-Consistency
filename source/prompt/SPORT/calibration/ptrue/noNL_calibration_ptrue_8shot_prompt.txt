@@ -1,0 +1,63 @@
+# Q: Is the following statement plausible? Sam Darnold passed the puck
+player_sport = "football"
+playing_sport = "hockey"
+plausibility = (player_sport == playing_sport)
+answer = int(plausibility)
+Execution result: 0
+Is the above answer correct? (Yes/No): Yes
+
+# Q: Is the following statement plausible? Jamal Murray was perfect from the line
+player_sport = "baseball"
+playing_sport = "basketball"
+plausibility = (player_sport == playing_sport)
+answer = int(plausibility)
+Execution result: 0
+Is the above answer correct? (Yes/No): No
+
+# Q: Is the following statement plausible? Joao Moutinho caught the screen pass in the NFC championship
+player_sport = "soccer"
+playing_sport = "football"
+plausibility = (player_sport == playing_sport)
+answer = int(plausibility)
+Execution result: 0
+Is the above answer correct? (Yes/No): Yes
+
+# Q: Is the following statement plausible? Malcolm Brogdon banked the shot in
+player_sport = "basketball"
+playing_sport = "football"
+plausibility = (player_sport == playing_sport)
+answer = int(plausibility)
+Execution result: 0
+Is the above answer correct? (Yes/No): No
+
+# Q: Is the following statement plausible? Jonas Valanciunas beat the buzzer
+player_sport = "basketball"
+playing_sport = "soccer"
+plausibility = (player_sport == playing_sport)
+answer = int(plausibility)
+Execution result: 0
+Is the above answer correct? (Yes/No): No
+
+# Q: Is the following statement plausible? Carson Wentz set the pick and roll
+player_sport = "football"
+playing_sport = "basketball"
+plausibility = (player_sport == playing_sport)
+answer = int(plausibility)
+Execution result: 0
+Is the above answer correct? (Yes/No): Yes
+
+# Q: Is the following statement plausible? Kyle Palmieri was called for slashing
+player_sport = "hockey"
+playing_sport = "basketball"
+plausibility = (player_sport == playing_sport)
+answer = int(plausibility)
+Execution result: 0
+Is the above answer correct? (Yes/No): No
+
+# Q: Is the following statement plausible? Liam Hendricks hit a double in the World Series
+player_sport = "baseball"
+playing_sport = "baseball"
+plausibility = (player_sport == playing_sport)
+answer = int(plausibility)
+Execution result: 1
+Is the above answer correct? (Yes/No): Yes

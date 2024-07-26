@@ -1,0 +1,4 @@
+Context: [QUESTION]
+Answer:
+[REASONING_CHAIN]
+How confident are you in the above answer (0-100%)?:

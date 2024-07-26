@@ -1,0 +1,66 @@
+Q: The first day of 2019 is a Tuesday, and today is the first Monday of 2019. What is the date today in MM/DD/YYYY?
+A:
+1. The first day of 2019 is a Tuesday, so the first Monday of 2019 is 01/07/2019.
+2. So the date today is 01/07/2019.
+3. So the answer is 01/07/2019.
+Answer: 01/07/2019
+Is the above answer correct? (Yes/No): Yes
+
+Q: The day before yesterday was 11/23/1933. What is the date 10 days ago in MM/DD/YYYY?
+A:
+1. The day before yesterday was 11/23/1933.
+2. 10 days ago is 11/13/1933.
+3. So the answer is 11/13/1933.
+Answer: 11/13/1933
+Is the above answer correct? (Yes/No): No
+
+Q: Yesterday, Jan 21, 2011, Jane ate 2 pizzas and 5 wings. What is the date 24 hours later in MM/DD/YYYY?
+A:
+1. Yesterday, Jan 21, 2011, Jane ate 2 pizzas and 5 wings.
+2. 24 hours later is Jan 22, 2011.
+3. So the answer is 01/22/2011.
+Answer: 01/22/2011
+Is the above answer correct? (Yes/No): No
+
+Q: Today is 9/7. Jane is watching NFL 2003. What is the date one week from today in MM/DD/YYYY?
+A:
+1. Today is 9/7.
+2. One week from today is 9/14.
+3. So the answer is 09/14/2003.
+Answer: 09/14/2003
+Is the above answer correct? (Yes/No): Yes
+
+Q: 2015 is coming in 36 hours. What is the date one week from today in MM/DD/YYYY?
+A:
+1. 2015 is coming in 36 hours, so today is 12/31/2014.
+2. One week from today is 01/07/2015.
+3. So the answer is 01/07/2015.
+Answer: 01/07/2015
+Is the above answer correct? (Yes/No): No
+
+Q: Jane and John married on Jan 2, 1958. Today is their golden wedding anniversary. What is the date one week from today in MM/DD/YYYY?
+A:
+1. Jane and John married on Jan 2, 1958.
+2. Today is their golden wedding anniversary, so today is 01/02/2008.
+3. One week from today is 01/09/2008.
+4. So the answer is 01/09/2008.
+Answer: 01/09/2008
+Is the above answer correct? (Yes/No): Yes
+
+Q: On May 9th, 2017 Jane bought 40 eggs. She ate one per day. Today she ran out of eggs. What is the date one week ago from today in MM/DD/YYYY?
+A:
+1. On May 9th, 2017 Jane bought 40 eggs.
+2. She ate one per day.
+3. Today she ran out of eggs, so today is 05/19/2017.
+4. One week ago from today is 05/12/2017.
+5. So the answer is 05/12/2017.
+Answer: 05/12/2017
+Is the above answer correct? (Yes/No): No
+
+Q: In the US, Thanksgiving is on the fourth Thursday of November. Today is the US Thanksgiving of 2001. What is the date one year ago from today in MM/DD/YYYY?
+A:
+1. Today is the US Thanksgiving of 2001, so today is 11/22/2001.
+2. One year ago from today is 11/22/2000.
+3. So the answer is 11/22/2000.
+Answer: 11/22/2000
+Is the above answer correct? (Yes/No): Yes

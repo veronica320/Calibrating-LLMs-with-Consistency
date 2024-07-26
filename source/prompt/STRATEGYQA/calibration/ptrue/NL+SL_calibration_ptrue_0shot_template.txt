@@ -1,0 +1,7 @@
+// Q: [QUESTION]
+
+// To answer this question, we answer the following subquestions:
+[REASONING_CHAIN]
+
+Execution result: [ANSWER]
+Is the above answer correct? (Yes/No):

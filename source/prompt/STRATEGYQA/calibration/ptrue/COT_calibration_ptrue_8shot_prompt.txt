@@ -1,0 +1,74 @@
+Q: Are there any chives hypothetically good for battling vampires?
+A:
+1. Chives are a type of onion.
+2. Onions are good for battling vampires.
+3. Thus, chives are hypothetically good for battling vampires.
+4. So the answer is yes.
+Answer: true
+Is the above answer correct? (Yes/No): Yes
+
+Q: Do moths that live on sloths have family dinners?
+A:
+1. Moths are insects.
+2. Insects are animals.
+3. Animals have families.
+4. Thus, moths that live on sloths have families.
+5. So the answer is yes.
+Answer: true
+Is the above answer correct? (Yes/No): No
+
+Q: Did Lionel Richie ever have dinner with Abraham Lincoln?
+A:
+1. Lionel Richie was born in 1949.
+2. Abraham Lincoln was assassinated in 1865.
+3. Thus, Lionel Richie was not alive when Abraham Lincoln was alive.
+4. Thus, Lionel Richie could not have had dinner with Abraham Lincoln.
+5. So the answer is no.
+Answer: false
+Is the above answer correct? (Yes/No): Yes
+
+Q: Was milliner in Alice in Wonderland (1951 film) likely in need of succimer?
+A:
+1. The milliner in Alice in Wonderland was a hat maker.
+2. Succimer is a drug used to treat heavy metal poisoning.
+3. Thus, the milliner was not likely in need of succimer.
+4. So the answer is no.
+Answer: false
+Is the above answer correct? (Yes/No): No
+
+Q: Was being a mail carrier considered one of the most dangerous jobs?
+A:
+1. Being a mail carrier is not considered one of the most dangerous jobs.
+2. The most dangerous jobs are logging, fishing, and flying.
+3. Thus, being a mail carrier is not considered one of the most dangerous jobs.
+4. So the answer is no.
+Answer: false
+Is the above answer correct? (Yes/No): No
+
+Q: Was ship that recovered Apollo 13 named after a World War II battle?
+A:
+1. The ship that recovered Apollo 13 was the USS Iwo Jima.
+2. The Battle of Iwo Jima was a World War II battle.
+3. Thus, the ship was named after a World War II battle.
+4. So the answer is yes.
+Answer: true
+Is the above answer correct? (Yes/No): Yes
+
+Q: Have the Israelis played the Hammerstein Ballroom?
+A:
+1. The Israelis are a band.
+2. The Hammerstein Ballroom is a venue.
+3. Bands play venues.
+4. Thus, the Israelis could play the Hammerstein Ballroom.
+5. So the answer is yes.
+Answer: true
+Is the above answer correct? (Yes/No): No
+
+Q: Could the Jackson 5 play a full game of rugby with each other?
+A:
+1. The Jackson 5 had 5 members.
+2. Rugby teams have 15 players.
+3. Thus, the Jackson 5 could not play a full game of rugby with each other.
+4. So the answer is no.
+Answer: false
+Is the above answer correct? (Yes/No): Yes

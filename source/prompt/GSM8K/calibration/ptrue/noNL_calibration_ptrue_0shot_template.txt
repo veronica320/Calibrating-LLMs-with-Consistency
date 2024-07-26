@@ -1,0 +1,5 @@
+Q: [QUESTION]
+A:
+[REASONING_CHAIN]
+Execution result: [ANSWER]
+Is the above answer correct? (Yes/No):

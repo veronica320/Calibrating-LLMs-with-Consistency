@@ -1,0 +1,5 @@
+# Q: Is the following statement plausible? [QUESTION]
+# To answer this question, we write a program to answer the following subquestions:
+[REASONING_CHAIN]
+Execution result: [ANSWER]
+How confident are you in the above answer (0-100%)?:

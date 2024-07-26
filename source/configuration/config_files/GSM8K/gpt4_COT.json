@@ -1,0 +1,5 @@
+{
+  "LM": "gpt-4-0613",
+  "prompt_name": "COT",
+  "no_solver": true
+}

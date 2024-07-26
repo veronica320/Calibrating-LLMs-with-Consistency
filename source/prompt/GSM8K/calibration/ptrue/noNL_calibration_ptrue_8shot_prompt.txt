@@ -1,0 +1,103 @@
+Q: Jame gets 20 singing lessons.  He gets the first lesson free and after the first 10 paid lessons he only needs to pay for every other lesson.  Each lesson is $5.  His uncle pays for half.  How much does James pay?
+A:
+1. lessons_total = 20
+2. lessons_free = 1
+3. lessons_paid = lessons_total - lessons_free
+4. lessons_paid_first_10 = 10
+5. lessons_paid_after_10 = lessons_paid - lessons_paid_first_10
+6. lessons_paid_after_10_every_other = lessons_paid_after_10 / 2
+7. lessons_paid_total = lessons_paid_first_10 + lessons_paid_after_10_every_other
+8. cost_per_lesson = 5
+9. cost_total = lessons_paid_total * cost_per_lesson
+10. cost_uncle = cost_total / 2
+11. cost_james = cost_total - cost_uncle
+12. answer = cost_james
+Execution result: 36
+Is the above answer correct? (Yes/No): No
+
+Q: The size of a bathroom is 96 sq ft. If the width of the bathroom is 8 feet and the owner wants to extend it by 2 feet on each side, what is the new area of the bathroom?
+A:
+1. width_bathroom = 8
+2. extension = 2
+3. width_new = width_bathroom + extension * 2
+4. area_bathroom = width_bathroom * width_bathroom
+5. area_new = width_new * width_new
+6. answer = area_new - area_bathroom
+Execution result: 80
+Is the above answer correct? (Yes/No): No
+
+Q: Unique is making biscuits. She has a sheet of dough that is 12 inches by 12 inches. She makes square biscuits and each biscuit is 3 inches by 3 inches. How many biscuits can she make with this dough?
+A:
+1. dough_length = 12
+2. dough_width = 12
+3. biscuit_length = 3
+4. biscuit_width = 3
+5. biscuits_per_row = dough_length // biscuit_length
+6. biscuits_per_column = dough_width // biscuit_width
+7. biscuits_total = biscuits_per_row * biscuits_per_column
+8. answer = biscuits_total
+Execution result: 16
+Is the above answer correct? (Yes/No): Yes
+
+Q: A jar full of marbles is sitting on a table. Half of the marbles are blue, a quarter of them are red, 27 of them are green, and 14 of them are yellow. How many marbles are in the jar?
+A:
+1. marbles_blue = Symbol("marbles_blue")
+2. marbles_red = marbles_blue * 1/2
+3. marbles_green = 27
+4. marbles_yellow = 14
+5. total_marbles_eq = Eq(marbles_blue + marbles_red + marbles_green + marbles_yellow, Symbol("total_marbles"))
+6. total_marbles_val = solve_it(total_marbles_eq, Symbol("total_marbles"))[Symbol("total_marbles")]
+7. answer = total_marbles_val
+Execution result: 3
+Is the above answer correct? (Yes/No): No
+
+Q: Our small city has two buses.  Each bus can have a capacity of 1/6 as much as the train, which has a capacity of 120 people.  What is the combined capacity of the two buses?
+A:
+1. train_capacity = 120
+2. bus_capacity = train_capacity * 1/6
+3. buses = 2
+4. buses_capacity = bus_capacity * buses
+5. answer = buses_capacity
+Execution result: 40
+Is the above answer correct? (Yes/No): Yes
+
+Q: Aliens and Martians have different numbers of limbs. Aliens have three arms and eight legs, while Martians have half as many legs and twice as many arms. How many more limbs will five aliens have than five Martians?
+A:
+1. alien_arms = 3
+2. alien_legs = 8
+3. martian_legs = alien_legs * 1/2
+4. martian_arms = alien_arms * 2
+5. limbs_alien = alien_arms + alien_legs
+6. limbs_martian = martian_arms + martian_legs
+7. limbs_5_aliens = limbs_alien * 5
+8. limbs_5_martians = limbs_martian * 5
+9. limbs_difference = limbs_5_aliens - limbs_5_martians
+10. answer = limbs_difference
+Execution result: 5
+Is the above answer correct? (Yes/No): Yes
+
+Q: A marathon is 26 miles.  He can run the first 10 miles in 1 hour.  For the remaining miles he runs at 80% that pace.  How long does the race take?
+A:
+1. miles_first_10 = 10
+2. miles_remaining = 26 - miles_first_10
+3. pace_first_10 = 1
+4. pace_remaining = pace_first_10 * 0.8
+5. time_first_10 = miles_first_10 * pace_first_10
+6. time_remaining = miles_remaining * pace_remaining
+7. time_total = time_first_10 + time_remaining
+8. answer = time_total
+Execution result: 22
+Is the above answer correct? (Yes/No): No
+
+Q: Abby is building 2 raised beds to grow vegetables.  The beds are both 8 feet long, 4 feet wide and 1 foot high.  Each bag of soil has 4 cubic feet.  How many bags of soil will she need?
+A:
+1. length_bed = 8
+2. width_bed = 4
+3. height_bed = 1
+4. cubic_feet_per_bag = 4
+5. volume_bed = length_bed * width_bed * height_bed
+6. bags_per_bed = volume_bed / cubic_feet_per_bag
+7. bags_2_beds = bags_per_bed * 2
+8. answer = bags_2_beds
+Execution result: 16
+Is the above answer correct? (Yes/No): Yes

@@ -1,0 +1,75 @@
+# Q: Today is the last day of the first quarter of 2008. What is the date one year ago from today in MM/DD/YYYY?
+# A:
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+date_today = date(2008,3,31)
+date_1year_ago = date_today - relativedelta(years=1)
+answer = date_1year_ago.strftime("%m/%d/%Y")
+print(answer)
+
+# Q: Today is the palindrome day of 2020, because the MMDDYYYY format of the date is the same backwards as forwards. What is the date yesterday in MM/DD/YYYY?
+# A:
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+date_today =  date(2020,2,2)
+date_yesterday = date_today - relativedelta(days=1)
+answer = date_yesterday.strftime("%m/%d/%Y")
+print(answer)
+
+# Q: Jane got her job in 2016. Today is her 3-year work anniversary. She still remember that on Dec 2, her second day at work, she spilled coffee on her laptop. What is the date one week from today in MM/DD/YYYY?
+# A:
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+date_second_day_at_work = date(2016,12,2)
+date_got_job = date_second_day_at_work - relativedelta(days=1)
+date_today = date_got_job + relativedelta(years=3)
+date_1week_from_today = date_today + relativedelta(weeks=1)
+answer = date_1week_from_today.strftime("%m/%d/%Y")
+print(answer)
+
+# Q: Jane visits the bookstore on the 16th of each month starting from the October of 2009. It is her 5th visit to the bookstore today. What is the date 10 days ago in MM/DD/YYYY?
+# A:
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+date_first_visit = date(2009,10,16)
+date_fifth_visit = date_first_visit + relativedelta(months=4)
+date_10days_ago = date_fifth_visit - relativedelta(days=10)
+answer = date_10days_ago.strftime("%m/%d/%Y")
+print(answer)
+
+# Q: May 6, 1992 is like yesterday to Jane, but that is actually ten years ago. What is the date a month ago in MM/DD/YYYY?
+# A:
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+date_10years_ago = date(1992,5,6)
+date_today = date(2002,5,6)
+date_1month_ago = date_today - relativedelta(months=1)
+answer = date_1month_ago.strftime("%m/%d/%Y")
+print(answer)
+
+# Q: The concert was scheduled to be on 06/01/1943, but was delayed by one day to today. What is the date today in MM/DD/YYYY?
+# A:
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+date_concert = date(1943,6,1)
+date_today = date_concert + relativedelta(days=1)
+answer = date_today.strftime("%m/%d/%Y")
+print(answer)
+
+# Q: This is the last day of 1899. What is the date today in MM/DD/YYYY?
+# A:
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+date_today = date(1899,12,31)
+answer = date_today.strftime("%m/%d/%Y")
+print(answer)
+
+# Q: Today is Apr 10, 1985. Jane's appointment will be 3 days later. What is the date a month ago in MM/DD/YYYY?
+# A:
+from datetime import date, time, datetime
+from dateutil.relativedelta import relativedelta
+date_today = date(1985,4,10)
+date_1month_ago = date_today - relativedelta(months=1)
+date_appointment = date_today + relativedelta(days=3)
+answer = date_1month_ago.strftime("%m/%d/%Y")
+print(answer)

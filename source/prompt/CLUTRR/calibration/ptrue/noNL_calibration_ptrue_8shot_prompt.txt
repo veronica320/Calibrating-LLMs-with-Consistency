@@ -1,0 +1,68 @@
+Context: [Jason] always had some great adventure planned for his granddaughter [Guillermina] when she came to visit. So, naturally, when [Myrna] told her daughter [Guillermina] that they would be going to visit [Jason] she could hardly contain herself.
+Question: How is [Jason] related to [Myrna]?
+1. relation(Jason, Guillermina) = grandfather
+2. relation(Guillermina, Myrna) = daughter
+3. relation(Jason, Myrna) = relation(Jason, Guillermina) @ relation(Guillermina, Myrna)
+Execution result: father
+Is the above answer correct? (Yes/No): Yes
+
+Context: [Joe] and her sister [Michele] decided to take a trip to Mexico together. [Jason] was giving his granddaughter [Michele] a piggy back ride.
+Question: How is [Joe] related to [Jason]?
+1. relation(Joe, Michele) = sister
+2. relation(Michele, Jason) = granddaughter
+3. relation(Joe, Jason) = relation(Joe, Michele) @ relation(Michele, Jason)
+Execution result: granddaughter
+Is the above answer correct? (Yes/No): No
+
+Context: [Clarence] and [Eunice], a married couple, took [Eunice]'s mother [Valerie] out to lunch for her birthday. [Alan] is proud to be married to his loving wife [Valerie].
+Question: How is [Clarence] related to [Alan]?
+1. relation(Clarence, Eunice) = husband
+2. relation(Eunice, Valerie) = mother
+3. relation(Valerie, Alan) = wife
+4. relation(Clarence, Alan) = relation(Clarence, Eunice) @ relation(Eunice, Valerie) @ relation(Valerie, Alan)
+Execution result: father-in-law
+Is the above answer correct? (Yes/No): No
+
+Context: [Carlos] enjoys the company of his sibling [Eunice]. [Alan] loves his daughter [Annie]. [Alan] seems to not get along with his daughter [Eunice].
+Question: How is [Annie] related to [Carlos]?
+1. relation(Annie, Alan) = daughter
+2. relation(Alan, Eunice) = daughter
+3. relation(Eunice, Carlos) = sibling
+4. relation(Annie, Carlos) = relation(Annie, Alan) @ relation(Alan, Eunice) @ relation(Eunice, Carlos)
+Execution result: unknown
+Is the above answer correct? (Yes/No): No
+
+Context: [Carlos] and his wife [Venita] are going to be at the play. [Carlos] went to visit his sister [Elizabeth] to the hospital last week. [Elizabeth] 'father, [Alan], recently went back to school.
+Question: How is [Alan] related to [Venita]?
+1. relation(Alan, Elizabeth) = father
+2. relation(Elizabeth, Carlos) = sister
+3. relation(Carlos, Venita) = husband
+4. relation(Alan, Venita) = relation(Alan, Elizabeth) @ relation(Elizabeth, Carlos) @ relation(Carlos, Venita)
+Execution result: father-in-law
+Is the above answer correct? (Yes/No): Yes
+
+Context: [Gabrielle] drove her daughter [Dorothy] to the hospital. [Dorothy]'s son [Vincent] showed up shortly after.
+Question: How is [Vincent] related to [Gabrielle]?
+1. relation(Vincent, Dorothy) = son
+2. relation(Dorothy, Gabrielle) = daughter
+3. relation(Vincent, Gabrielle) = relation(Vincent, Dorothy) @ relation(Dorothy, Gabrielle)
+Execution result: grandson
+Is the above answer correct? (Yes/No): Yes
+
+Context: [Elliott] is excited to cheer on his brother [James] in the homecoming game tonight. [Alan] love his brother [Elliott]. They are always playing together. [Alan] loves his daughter [Annie].
+Question: How is [Annie] related to [James]?
+1. relation(Annie, Alan) = daughter
+2. relation(Alan, Elliott) = brother
+3. relation(Elliott, James) = brother
+4. relation(Annie, James) = relation(Annie, Alan) @ relation(Alan, Elliott) @ relation(Elliott, James)
+Execution result: niece
+Is the above answer correct? (Yes/No): Yes
+
+Context: [Sandra] loved to care for her newborn child [Lee]. [James] bought a book for his son [Anthony]. [James] bought his wife [Sandra] roses.
+Question: How is [Lee] related to [Anthony]?
+1. relation(Lee, Sandra) = child
+2. relation(Sandra, James) = wife
+3. relation(James, Anthony) = son
+4. relation(Lee, Anthony) = relation(Lee, Sandra) @ relation(Sandra, James) @ relation(James, Anthony)
+Execution result: unknown
+Is the above answer correct? (Yes/No): No

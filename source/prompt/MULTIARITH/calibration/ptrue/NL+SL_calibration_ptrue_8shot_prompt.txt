@@ -1,0 +1,150 @@
+Q: Jame gets 20 singing lessons.  He gets the first lesson free and after the first 10 paid lessons he only needs to pay for every other lesson.  Each lesson is $5.  His uncle pays for half.  How much does James pay?
+A: # To answer this question, write a Python program to answer the following subquestions:
+# 1. How many lessons does James get? (independent, support: ["Jame gets 20 singing lessons"])
+lessons = 20
+# 2. How much does James pay for each lesson? (independent, support: ["Each lesson is $5"])
+cost_per_lesson = 5
+# 3. How many lessons does James pay for? (depends on 1, support: ["He gets the first lesson free"])
+lessons_paid = lessons - 1
+# 4. How many lessons does James pay for after the first 10 paid lessons? (depends on 3, support: ["after the first 10 paid lessons he only needs to pay for every other lesson"])
+lessons_paid_after_10 = lessons_paid - 10
+# 5. How much does James pay for lessons after the first 10 paid lessons? (depends on 4 and 2, support: [])
+cost_after_10 = lessons_paid_after_10 * cost_per_lesson
+# 6. How much does James pay for the first 10 paid lessons? (depends on 3 and 2, support: [])
+cost_first_10 = lessons_paid - lessons_paid_after_10
+# 7. How much does James pay for all lessons? (depends on 5 and 6, support: [])
+cost_all = cost_after_10 + cost_first_10
+# 8. How much does James uncle pay for all lessons? (depends on 7, support: ["His uncle pays for half"])
+cost_uncle = cost_all / 2
+# 9. How much does James pay for all lessons? (depends on 7 and 8, support: [])
+cost_james = cost_all - cost_uncle
+# 10. Final Answer: How much does James pay? (depends on 9, support: [])
+answer = cost_james
+Execution result: 27
+Is the above answer correct? (Yes/No): No
+
+Q: The size of a bathroom is 96 sq ft. If the width of the bathroom is 8 feet and the owner wants to extend it by 2 feet on each side, what is the new area of the bathroom?
+A: # To answer this question, write a Python program to answer the following subquestions:
+# 1. What is the width of the bathroom? (independent, support: ["the width of the bathroom is 8 feet"])
+width_bathroom = 8
+# 2. How much does the owner want to extend the bathroom on each side? (independent, support: ["extend it by 2 feet on each side"])
+extension_each_side = 2
+# 3. How much does the owner want to extend the bathroom in total? (depends on 2, support: [])
+extension_total = extension_each_side * 2
+# 4. What is the new width of the bathroom? (depends on 1 and 3, support: [])
+new_width_bathroom = width_bathroom + extension_total
+# 5. What is the size of the bathroom? (independent, support: ["The size of a bathroom is 96 sq ft"])
+size_bathroom = 96
+# 6. What is the length of the bathroom? (depends on 5, support: [])
+length_bathroom = size_bathroom / width_bathroom
+# 7. What is the new length of the bathroom? (depends on 6 and 3, support: [])
+new_length_bathroom = length_bathroom + extension_total
+# 8. What is the new area of the bathroom? (depends on 7 and 4, support: [])
+new_area_bathroom = new_length_bathroom * new_width_bathroom
+# 9. Final Answer: What is the new area of the bathroom? (depends on 8, support: [])
+answer = new_area_bathroom
+Execution result: 192
+Is the above answer correct? (Yes/No): No
+
+Q: Unique is making biscuits. She has a sheet of dough that is 12 inches by 12 inches. She makes square biscuits and each biscuit is 3 inches by 3 inches. How many biscuits can she make with this dough?
+A: # To answer this question, write a Python program to answer the following subquestions:
+# 1. How long is one side of the dough? (independent, support: ["She has a sheet of dough that is 12 inches by 12 inches"])
+dough_side = 12
+# 2. How long is one side of the biscuit? (independent, support: ["each biscuit is 3 inches by 3 inches"])
+biscuit_side = 3
+# 3. How many biscuits can she make with this dough? (depends on 1 and 2, support: [])
+biscuits_made = (dough_side / biscuit_side) ** 2
+# 4. Final Answer: How many biscuits can she make with this dough? (depends on 3, support: [])
+answer = biscuits_made
+Execution result: 16
+Is the above answer correct? (Yes/No): Yes
+
+Q: A jar full of marbles is sitting on a table. Half of the marbles are blue, a quarter of them are red, 27 of them are green, and 14 of them are yellow. How many marbles are in the jar?
+A: # To answer this question, write a Python program to answer the following subquestions:
+# 1. How many marbles are blue? (independent, support: ["Half of the marbles are blue"])
+marbles_blue = Symbol("marbles_blue")
+# 2. How many marbles are red? (depends on 1, support: ["a quarter of them are red"])
+marbles_red = marbles_blue * 1/4
+# 3. How many marbles are green? (independent, support: ["27 of them are green"])
+marbles_green = 27
+# 4. How many marbles are yellow? (independent, support: ["14 of them are yellow"])
+marbles_yellow = 14
+# 5. How many marbles are in the jar? (depends on 1, 2, 3, and 4, support: [])
+marbles_eq = Eq(marbles_blue + marbles_red + marbles_green + marbles_yellow, Symbol("marbles_total"))
+marbles_total = solve_it(marbles_eq, marbles_blue)[marbles_blue]
+# 6. Final Answer: How many marbles are in the jar? (depends on 5, support: [])
+answer = marbles_total
+Execution result: 4
+Is the above answer correct? (Yes/No): No
+
+Q: Our small city has two buses.  Each bus can have a capacity of 1/6 as much as the train, which has a capacity of 120 people.  What is the combined capacity of the two buses?
+A: # To answer this question, write a Python program to answer the following subquestions:
+# 1. How many people can the train hold? (independent, support: ["the train, which has a capacity of 120 people"])
+train_capacity = 120
+# 2. How many people can one bus hold? (depends on 1, support: ["Each bus can have a capacity of 1/6 as much as the train"])
+bus_capacity = train_capacity * 1/6
+# 3. How many people can two buses hold? (depends on 2, support: ["What is the combined capacity of the two buses?"])
+buses_capacity = bus_capacity * 2
+# 4. Final Answer: What is the combined capacity of the two buses? (depends on 3, support: [])
+answer = buses_capacity
+Execution result: 40
+Is the above answer correct? (Yes/No): Yes
+
+Q: Aliens and Martians have different numbers of limbs. Aliens have three arms and eight legs, while Martians have half as many legs and twice as many arms. How many more limbs will five aliens have than five Martians?
+A: # To answer this question, write a Python program to answer the following subquestions:
+# 1. How many arms does an alien have? (independent, support: ["Aliens have three arms"])
+arms_alien = 3
+# 2. How many legs does an alien have? (independent, support: ["eight legs"])
+legs_alien = 8
+# 3. How many arms does a Martian have? (depends on 1, support: ["twice as many arms"])
+arms_martian = arms_alien * 2
+# 4. How many legs does a Martian have? (depends on 2, support: ["half as many legs"])
+legs_martian = legs_alien * 1/2
+# 5. How many limbs does an alien have? (depends on 1 and 2, support: [])
+limbs_alien = arms_alien + legs_alien
+# 6. How many limbs does a Martian have? (depends on 3 and 4, support: [])
+limbs_martian = arms_martian + legs_martian
+# 7. How many more limbs will five aliens have than five Martians? (depends on 5 and 6, support: ["five aliens have than five Martians"])
+limbs_difference = (limbs_alien - limbs_martian) * 5
+# 8. Final Answer: How many more limbs will five aliens have than five Martians? (depends on 7, support: [])
+answer = limbs_difference
+Execution result: 5
+Is the above answer correct? (Yes/No): Yes
+
+Q: A marathon is 26 miles.  He can run the first 10 miles in 1 hour.  For the remaining miles he runs at 80% that pace.  How long does the race take?
+A: # To answer this question, write a Python program to answer the following subquestions:
+# 1. How many miles is a marathon? (independent, support: ["A marathon is 26 miles"])
+miles_marathon = 26
+# 2. How many miles does he run in the first hour? (independent, support: ["He can run the first 10 miles in 1 hour"])
+miles_first_hour = 10
+# 3. How many miles does he run in the remaining miles? (depends on 1 and 2, support: [])
+miles_remaining = miles_marathon - miles_first_hour
+# 4. How long does he run the remaining miles? (depends on 3, support: ["For the remaining miles he runs at 80% that pace"])
+time_remaining = miles_remaining / 0.8
+# 5. How long does the race take? (depends on 2 and 4, support: [])
+time_race = 1 + time_remaining
+# 6. Final Answer: How long does the race take? (depends on 5, support: [])
+answer = time_race
+Execution result: 21
+Is the above answer correct? (Yes/No): No
+
+Q: Abby is building 2 raised beds to grow vegetables.  The beds are both 8 feet long, 4 feet wide and 1 foot high.  Each bag of soil has 4 cubic feet.  How many bags of soil will she need?
+A: # To answer this question, write a Python program to answer the following subquestions:
+# 1. How many feet are in a yard? (independent, support: ["External knowledge: there are 3 feet in a yard"])
+feet_in_yard = 3
+# 2. How many cubic feet are in a cubic yard? (depends on 1, support: ["External knowledge: there are 27 cubic feet in a cubic yard"])
+cubic_feet_in_cubic_yard = 27
+# 3. How many cubic feet are in one raised bed? (independent, support: ["The beds are both 8 feet long, 4 feet wide and 1 foot high"])
+cubic_feet_per_bed = 8 * 4 * 1
+# 4. How many cubic feet are in two raised beds? (depends on 3, support: ["Abby is building 2 raised beds"])
+cubic_feet_2_beds = cubic_feet_per_bed * 2
+# 5. How many cubic yards are in two raised beds? (depends on 4 and 2, support: [])
+cubic_yards_2_beds = cubic_feet_2_beds / cubic_feet_in_cubic_yard
+# 6. How many bags of soil are in one cubic yard? (independent, support: ["Each bag of soil has 4 cubic feet"])
+bags_per_cubic_yard = cubic_feet_in_cubic_yard / 4
+# 7. How many bags of soil are in two raised beds? (depends on 5 and 6, support: [])
+bags_2_beds = cubic_yards_2_beds * bags_per_cubic_yard
+# 8. Final Answer: How many bags of soil will she need? (depends on 7, support: [])
+answer = bags_2_beds
+Execution result: 16
+Is the above answer correct? (Yes/No): Yes

@@ -1,0 +1,31 @@
+Q: Jame gets 20 singing lessons.  He gets the first lesson free and after the first 10 paid lessons he only needs to pay for every other lesson.  Each lesson is $5.  His uncle pays for half.  How much does James pay?
+A: 50
+Is the above answer correct? (Yes/No): No
+
+Q: The size of a bathroom is 96 sq ft. If the width of the bathroom is 8 feet and the owner wants to extend it by 2 feet on each side, what is the new area of the bathroom?
+A: 128
+Is the above answer correct? (Yes/No): No
+
+Q: Unique is making biscuits. She has a sheet of dough that is 12 inches by 12 inches. She makes square biscuits and each biscuit is 3 inches by 3 inches. How many biscuits can she make with this dough?
+A: 16
+Is the above answer correct? (Yes/No): Yes
+
+Q: A jar full of marbles is sitting on a table. Half of the marbles are blue, a quarter of them are red, 27 of them are green, and 14 of them are yellow. How many marbles are in the jar?
+A: 68
+Is the above answer correct? (Yes/No): No
+
+Q: Our small city has two buses.  Each bus can have a capacity of 1/6 as much as the train, which has a capacity of 120 people.  What is the combined capacity of the two buses?
+A: 40
+Is the above answer correct? (Yes/No): Yes
+
+Q: Aliens and Martians have different numbers of limbs. Aliens have three arms and eight legs, while Martians have half as many legs and twice as many arms. How many more limbs will five aliens have than five Martians?
+A: 5
+Is the above answer correct? (Yes/No): Yes
+
+Q: A marathon is 26 miles.  He can run the first 10 miles in 1 hour.  For the remaining miles he runs at 80% that pace.  How long does the race take?
+A: 2
+Is the above answer correct? (Yes/No): No
+
+Q: Abby is building 2 raised beds to grow vegetables.  The beds are both 8 feet long, 4 feet wide and 1 foot high.  Each bag of soil has 4 cubic feet.  How many bags of soil will she need?
+A: 16
+Is the above answer correct? (Yes/No): Yes

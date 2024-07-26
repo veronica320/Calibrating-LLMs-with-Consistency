@@ -1,0 +1,5 @@
+Q: [QUESTION]
+A: To answer this question, we need to answer the following subquestions:
+[REASONING_CHAIN]
+Answer: [ANSWER]
+Is the above answer correct? (Yes/No):

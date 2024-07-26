@@ -1,0 +1,5 @@
+User query: [QUESTION]
+Goal in PDDL:
+[REASONING_CHAIN]
+Plan: [ANSWER]
+How confident are you in the above plan (0-100%)?:

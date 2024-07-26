@@ -1,0 +1,31 @@
+Q: The first day of 2019 is a Tuesday, and today is the first Monday of 2019. What is the date today in MM/DD/YYYY?
+A: 01/07/2019
+Is the above answer correct? (Yes/No): Yes
+
+Q: The day before yesterday was 11/23/1933. What is the date 10 days ago in MM/DD/YYYY?
+A: 11/13/1933
+Is the above answer correct? (Yes/No): No
+
+Q: Yesterday, Jan 21, 2011, Jane ate 2 pizzas and 5 wings. What is the date 24 hours later in MM/DD/YYYY?
+A: 01/22/2011
+Is the above answer correct? (Yes/No): No
+
+Q: Today is 9/7. Jane is watching NFL 2003. What is the date one week from today in MM/DD/YYYY?
+A: 09/14/2003
+Is the above answer correct? (Yes/No): Yes
+
+Q: 2015 is coming in 36 hours. What is the date one week from today in MM/DD/YYYY?
+A: 12/26/2014
+Is the above answer correct? (Yes/No): No
+
+Q: Jane and John married on Jan 2, 1958. Today is their golden wedding anniversary. What is the date one week from today in MM/DD/YYYY?
+A: 01/09/2008
+Is the above answer correct? (Yes/No): Yes
+
+Q: On May 9th, 2017 Jane bought 40 eggs. She ate one per day. Today she ran out of eggs. What is the date one week ago from today in MM/DD/YYYY?
+A: 05/12/2017
+Is the above answer correct? (Yes/No): No
+
+Q: In the US, Thanksgiving is on the fourth Thursday of November. Today is the US Thanksgiving of 2001. What is the date one year ago from today in MM/DD/YYYY?
+A: 11/22/2000
+Is the above answer correct? (Yes/No): Yes

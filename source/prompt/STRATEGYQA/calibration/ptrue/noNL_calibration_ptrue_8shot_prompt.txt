@@ -1,0 +1,104 @@
+// Q: Are there any chives hypothetically good for battling vampires?
+.decl Hypothetically_good_for_battling_vampires(Plant:symbol)
+Hypothetically_good_for_battling_vampires("garlic").
+Hypothetically_good_for_battling_vampires("hawthorn").
+Hypothetically_good_for_battling_vampires("chives").
+.decl Answer()
+Answer() :- Hypothetically_good_for_battling_vampires("chives").
+.output Answer
+Execution result: true
+Is the above answer correct? (Yes/No): Yes
+
+// Q: Do moths that live on sloths have family dinners?
+.decl Lives_on(Animal_A:symbol, Animal_B:symbol)
+Lives_on("moth", "sloth").
+.decl Has_family_dinner(Animal:symbol)
+Has_family_dinner("sloth").
+.decl Answer()
+Answer() :- Lives_on("moth", animal), Has_family_dinner(animal).
+.output Answer
+Execution result: true
+Is the above answer correct? (Yes/No): No
+
+// Q: Did Lionel Richie ever have dinner with Abraham Lincoln?
+.decl Lives_from_to(Person:symbol, Year_start:float, Year_end:float)
+Lives_from_to("Lionel Richie", 1949, present).
+Lives_from_to("Abraham Lincoln", 1809, 1865).
+.decl Lives_at_same_time(Person1:symbol, Person2:symbol, Year_start:float, Year_end:float)
+Lives_at_same_time("Lionel Richie", "Abraham Lincoln", 1949, 1865).
+.decl Answer()
+Answer() :- Lives_at_same_time("Lionel Richie", "Abraham Lincoln", year_start, year_end).
+.output Answer
+Execution result: false
+Is the above answer correct? (Yes/No): Yes
+
+// Q: Was milliner in Alice in Wonderland (1951 film) likely in need of succimer?
+.decl Is_occupation(Occupation:symbol, Definition:symbol)
+Is_occupation("milliner", "person who makes, designs, or sells hats").
+.decl Is_definition(Definition:symbol, Drug:symbol)
+Is_definition("drug used to treat heavy metal poisoning", "succimer").
+Is_definition("toxic accumulation of heavy metals in the soft tissues of the body", "heavy metal poisoning").
+.decl Has_symptom(Disease:symbol, Symptom:symbol)
+Has_symptom("heavy metal poisoning", "nausea").
+Has_symptom("heavy metal poisoning", "vomiting").
+Has_symptom("heavy metal poisoning", "diarrhea").
+Has_symptom("heavy metal poisoning", "abdominal pain").
+Has_symptom("heavy metal poisoning", "headache").
+Has_symptom("Alice in Wonderland (1951 film)", "hallucinations").
+Has_symptom("Alice in Wonderland (1951 film)", "confusion").
+Has_symptom("Alice in Wonderland (1951 film)", "delirium").
+Has_symptom("milliner", "nausea").
+Has_symptom("milliner", "vomiting").
+Has_symptom("milliner", "diarrhea").
+Has_symptom("milliner", "abdominal pain").
+Has_symptom("milliner", "headache").
+.decl Answer()
+Answer() :- Has_symptom("milliner", symptom1), Has_symptom("heavy metal poisoning", symptom1), Has_symptom("Alice in Wonderland (1951 film)",
+Execution result: false
+Is the above answer correct? (Yes/No): No
+
+// Q: Was being a mail carrier considered one of the most dangerous jobs?
+.decl Has_fatality_rate(Job:symbol, Fatality_rate:float)
+Has_fatality_rate("mail carrier", 20.5).
+Has_fatality_rate("fisherman", 117.0).
+Has_fatality_rate("logger", 127.8).
+Has_fatality_rate("pilot", 53.4).
+Has_fatality_rate("roofer", 52.5).
+Has_fatality_rate("sanitation worker", 34.1).
+Has_fatality_rate("steelworker", 38.7).
+.decl Answer()
+Answer() :- Has_fatality_rate("mail carrier", fatality_rate1), Has_fatality_rate("sanitation worker", fatality_rate2), fatality_rate1 > fatality_rate2.
+.output Answer
+Execution result: false
+Is the above answer correct? (Yes/No): No
+
+// Q: Was ship that recovered Apollo 13 named after a World War II battle?
+.decl Recovers(Ship:symbol, Event:symbol)
+Recovers("USS Iwo Jima", "Apollo 13").
+.decl Named_after(Ship:symbol, Battle:symbol)
+Named_after("USS Iwo Jima", "World War II battle").
+.decl Answer()
+Answer() :- Recovers(ship, "Apollo 13"), Named_after(ship, "World War II battle").
+.output Answer
+Execution result: true
+Is the above answer correct? (Yes/No): Yes
+
+// Q: Have the Israelis played the Hammerstein Ballroom?
+.decl Plays(Band:symbol, Venue:symbol)
+Plays("The Israelis", "Hammerstein Ballroom").
+.decl Answer()
+Answer() :- Plays("The Israelis", "Hammerstein Ballroom").
+.output Answer
+Execution result: true
+Is the above answer correct? (Yes/No): No
+
+// Q: Could the Jackson 5 play a full game of rugby with each other?
+.decl Has_n_members(Group:symbol, N_members:float)
+Has_n_members("Jackson 5", 5).
+.decl Has_n_players(Team:symbol, N_players:float)
+Has_n_players("rugby", 15).
+.decl Answer()
+Answer() :- Has_n_members("Jackson 5", n_members1), Has_n_players("rugby", n_players2), n_members1 > n_players2.
+.output Answer
+Execution result: false
+Is the above answer correct? (Yes/No): Yes

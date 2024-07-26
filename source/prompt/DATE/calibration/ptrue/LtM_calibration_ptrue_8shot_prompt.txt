@@ -1,0 +1,79 @@
+Q: The first day of 2019 is a Tuesday, and today is the first Monday of 2019. What is the date today in MM/DD/YYYY?
+A: To answer this question, we need to answer the following subquestions:
+Q1. What is the first day of 2019?
+The first day of 2019 is a Tuesday.
+Q2. What is the first Monday of 2019?
+The first Monday of 2019 is 01/07/2019.
+Final Answer: What is the date today in MM/DD/YYYY?
+Today is the first Monday of 2019. So the answer is 01/07/2019.
+Answer: 01/07/2019
+Is the above answer correct? (Yes/No): Yes
+
+Q: The day before yesterday was 11/23/1933. What is the date 10 days ago in MM/DD/YYYY?
+A: To answer this question, we need to answer the following subquestions:
+Q1. What is the day before yesterday?
+The day before yesterday was 11/23/1933.
+Final Answer: What is the date 10 days ago in MM/DD/YYYY?
+10 days ago is 11/13/1933. So the answer is 11/13/1933.
+Answer: 11/13/1933
+Is the above answer correct? (Yes/No): No
+
+Q: Yesterday, Jan 21, 2011, Jane ate 2 pizzas and 5 wings. What is the date 24 hours later in MM/DD/YYYY?
+A: To answer this question, we need to answer the following subquestions:
+Q1. What is the date yesterday?
+Yesterday was Jan 21, 2011.
+Final Answer: What is the date 24 hours later in MM/DD/YYYY?
+24 hours later is Jan 22, 2011. So the answer is 01/22/2011.
+Answer: 01/22/2011
+Is the above answer correct? (Yes/No): No
+
+Q: Today is 9/7. Jane is watching NFL 2003. What is the date one week from today in MM/DD/YYYY?
+A: To answer this question, we need to answer the following subquestions:
+Q1. What is the date today?
+Today is 9/7.
+Final Answer: What is the date one week from today in MM/DD/YYYY?
+One week from today is 9/14. So the answer is 09/14/2003.
+Answer: 09/14/2003
+Is the above answer correct? (Yes/No): Yes
+
+Q: 2015 is coming in 36 hours. What is the date one week from today in MM/DD/YYYY?
+A: To answer this question, we need to answer the following subquestions:
+Q1. What is the date today?
+2015 is coming in 36 hours, so today is 12/31/2014.
+Final Answer: What is the date one week from today in MM/DD/YYYY?
+One week from today is 01/07/2015. So the answer is 01/07/2015.
+Answer: 01/07/2015
+Is the above answer correct? (Yes/No): No
+
+Q: Jane and John married on Jan 2, 1958. Today is their golden wedding anniversary. What is the date one week from today in MM/DD/YYYY?
+A: To answer this question, we need to answer the following subquestions:
+Q1. When did Jane and John marry?
+Jane and John married on Jan 2, 1958.
+Q2. What is the date today?
+Today is their golden wedding anniversary, so today is 01/02/2008.
+Final Answer: What is the date one week from today in MM/DD/YYYY?
+One week from today is 01/09/2008. So the answer is 01/09/2008.
+Answer: 01/09/2008
+Is the above answer correct? (Yes/No): Yes
+
+Q: On May 9th, 2017 Jane bought 40 eggs. She ate one per day. Today she ran out of eggs. What is the date one week ago from today in MM/DD/YYYY?
+A: To answer this question, we need to answer the following subquestions:
+Q1. When did Jane buy 40 eggs?
+On May 9th, 2017 Jane bought 40 eggs.
+Q2. How many eggs did Jane eat per day?
+She ate one egg per day.
+Q3. What is the date today?
+Today she ran out of eggs, so today is 05/16/2017.
+Final Answer: What is the date one week ago from today in MM/DD/YYYY?
+One week ago from today is 05/12/2017. So the answer is 05/12/2017.
+Answer: 05/12/2017
+Is the above answer correct? (Yes/No): No
+
+Q: In the US, Thanksgiving is on the fourth Thursday of November. Today is the US Thanksgiving of 2001. What is the date one year ago from today in MM/DD/YYYY?
+A: To answer this question, we need to answer the following subquestions:
+Q1. What is the date today?
+Today is the US Thanksgiving of 2001, so today is 11/22/2001.
+Final Answer: What is the date one year ago from today in MM/DD/YYYY?
+One year ago from today is 11/22/2000. So the answer is 11/22/2000.
+Answer: 11/22/2000
+Is the above answer correct? (Yes/No): Yes

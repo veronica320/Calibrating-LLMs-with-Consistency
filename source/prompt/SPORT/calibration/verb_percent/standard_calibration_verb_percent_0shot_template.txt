@@ -1,0 +1,3 @@
+Q: Is the following statement plausible? "[QUESTION]"
+A: [REASONING_CHAIN]
+How confident are you in the above answer (0-100%)?:

@@ -1,0 +1,31 @@
+Q: Are there any chives hypothetically good for battling vampires?
+A: true
+Is the above answer correct? (Yes/No): Yes
+
+Q: Do moths that live on sloths have family dinners?
+A: true
+Is the above answer correct? (Yes/No): No
+
+Q: Did Lionel Richie ever have dinner with Abraham Lincoln?
+A: false
+Is the above answer correct? (Yes/No): Yes
+
+Q: Was milliner in Alice in Wonderland (1951 film) likely in need of succimer?
+A: false
+Is the above answer correct? (Yes/No): No
+
+Q: Was being a mail carrier considered one of the most dangerous jobs?
+A: false
+Is the above answer correct? (Yes/No): No
+
+Q: Was ship that recovered Apollo 13 named after a World War II battle?
+A: true
+Is the above answer correct? (Yes/No): Yes
+
+Q: Have the Israelis played the Hammerstein Ballroom?
+A: true
+Is the above answer correct? (Yes/No): No
+
+Q: Could the Jackson 5 play a full game of rugby with each other?
+A: false
+Is the above answer correct? (Yes/No): Yes

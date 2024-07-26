@@ -1,0 +1,6 @@
+User query: [QUESTION]
+Goal in PDDL:
+[REASONING_CHAIN]
+Plan:
+[ANSWER]
+Is the above plan correct? (Yes/No):

@@ -1,0 +1,97 @@
+Context: [Jason] always had some great adventure planned for his granddaughter [Guillermina] when she came to visit. So, naturally, when [Myrna] told her daughter [Guillermina] that they would be going to visit [Jason] she could hardly contain herself.
+Question: How is [Jason] related to [Myrna]?
+Answer:
+1. How is [Jason] related to [Guillermina]?
+Jason is Guillermina's grandfather.
+2. How is [Guillermina] related to [Myrna]?
+Guillermina is Myrna's daughter.
+3. Final Answer: How is [Jason] related to [Myrna]?
+Jason is Myrna's father.
+Is the above answer correct? (Yes/No): Yes
+
+Context: [Joe] and her sister [Michele] decided to take a trip to Mexico together. [Jason] was giving his granddaughter [Michele] a piggy back ride.
+Question: How is [Joe] related to [Jason]?
+Answer:
+1. How is [Joe] related to [Michele]?
+Joe is Michele's sister.
+2. How is [Michele] related to [Jason]?
+Michele is Jason's granddaughter.
+3. Final Answer: How is [Joe] related to [Jason]?
+Joe is Jason's granddaughter.
+Is the above answer correct? (Yes/No): No
+
+Context: [Clarence] and [Eunice], a married couple, took [Eunice]'s mother [Valerie] out to lunch for her birthday. [Alan] is proud to be married to his loving wife [Valerie].
+Question: How is [Clarence] related to [Alan]?
+Answer:
+1. How is [Clarence] related to [Eunice]?
+Clarence is Eunice's husband.
+2. How is [Eunice] related to [Valerie]?
+Eunice is Valerie's mother.
+3. How is [Valerie] related to [Alan]?
+Valerie is Alan's wife.
+4. Final Answer: How is [Clarence] related to [Alan]?
+Clarence is Alan's father-in-law.
+Is the above answer correct? (Yes/No): No
+
+Context: [Carlos] enjoys the company of his sibling [Eunice]. [Alan] loves his daughter [Annie]. [Alan] seems to not get along with his daughter [Eunice].
+Question: How is [Annie] related to [Carlos]?
+Answer:
+1. How is [Annie] related to [Alan]?
+Annie is Alan's daughter.
+2. How is [Alan] related to [Eunice]?
+Alan is Eunice's father.
+3. How is [Eunice] related to [Carlos]?
+Eunice is Carlos's sibling.
+4. Final Answer: How is [Annie] related to [Carlos]?
+Annie is Carlos's niece.
+Is the above answer correct? (Yes/No): No
+
+Context: [Carlos] and his wife [Venita] are going to be at the play. [Carlos] went to visit his sister [Elizabeth] to the hospital last week. [Elizabeth] 'father, [Alan], recently went back to school.
+Question: How is [Alan] related to [Venita]?
+Answer:
+1. How is [Alan] related to [Elizabeth]?
+Alan is Elizabeth's father.
+2. How is [Elizabeth] related to [Carlos]?
+Elizabeth is Carlos's sister.
+3. How is [Carlos] related to [Venita]?
+Carlos is Venita's husband.
+4. Final Answer: How is [Alan] related to [Venita]?
+Alan is Venita's father-in-law.
+Is the above answer correct? (Yes/No): Yes
+
+Context: [Gabrielle] drove her daughter [Dorothy] to the hospital. [Dorothy]'s son [Vincent] showed up shortly after.
+Question: How is [Vincent] related to [Gabrielle]?
+Answer:
+1. How is [Vincent] related to [Dorothy]?
+Vincent is Dorothy's son.
+2. How is [Dorothy] related to [Gabrielle]?
+Dorothy is Gabrielle's daughter.
+3. Final Answer: How is [Vincent] related to [Gabrielle]?
+Vincent is Gabrielle's grandson.
+Is the above answer correct? (Yes/No): Yes
+
+Context: [Elliott] is excited to cheer on his brother [James] in the homecoming game tonight. [Alan] love his brother [Elliott]. They are always playing together. [Alan] loves his daughter [Annie].
+Question: How is [Annie] related to [James]?
+Answer:
+1. How is [Annie] related to [Alan]?
+Annie is Alan's daughter.
+2. How is [Alan] related to [Elliott]?
+Alan is Elliott's brother.
+3. How is [Elliott] related to [James]?
+Elliott is James's brother.
+4. Final Answer: How is [Annie] related to [James]?
+Annie is James's niece.
+Is the above answer correct? (Yes/No): Yes
+
+Context: [Sandra] loved to care for her newborn child [Lee]. [James] bought a book for his son [Anthony]. [James] bought his wife [Sandra] roses.
+Question: How is [Lee] related to [Anthony]?
+Answer:
+1. How is [Lee] related to [Sandra]?
+Lee is Sandra's child.
+2. How is [Sandra] related to [James]?
+Sandra is James's wife.
+3. How is [James] related to [Anthony]?
+James is Anthony's father.
+4. Final Answer: How is [Lee] related to [Anthony]?
+Lee is Anthony's sibling.
+Is the above answer correct? (Yes/No): No

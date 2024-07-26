@@ -1,0 +1,127 @@
+Q: Jame gets 20 singing lessons.  He gets the first lesson free and after the first 10 paid lessons he only needs to pay for every other lesson.  Each lesson is $5.  His uncle pays for half.  How much does James pay?
+A: To answer the above question, we need to answer the following subquestions:
+Q1. How many lessons do James have?
+James has 20 lessons.
+Q2. How many lessons does James pay for?
+The first one is free, so he pays for 19 lessons.
+Q3. How many lessons does James pay for after the first 10?
+He pays for every other lesson after the first 10, so he pays for 9 lessons.
+Q4. How much does James pay for each lesson?
+Each lesson is $5.
+Q5. How much does James pay for all the lessons?
+He pays 9 * $5 = $45.
+Q6. How much does James' uncle pay for?
+His uncle pays for half, which is $45 / 2 = $22.50.
+Final Answer: How much does James pay?
+James pays $22.50. The answer is 22.
+Answer: 22
+Is the above answer correct? (Yes/No): No
+
+Q: The size of a bathroom is 96 sq ft. If the width of the bathroom is 8 feet and the owner wants to extend it by 2 feet on each side, what is the new area of the bathroom?
+A: To answer the above question, we need to answer the following subquestions:
+Q1. What is the width of the bathroom?
+The width of the bathroom is 8 feet.
+Q2. How much does the owner want to extend the bathroom on each side?
+The owner wants to extend it by 2 feet on each side.
+Q3. What is the new width of the bathroom?
+This means the new width will be 8 + 2 + 2 = 12 feet.
+Q4. What is the current area of the bathroom?
+The area of the bathroom is 96 sq ft.
+Q5. What is the new area of the bathroom?
+The new area will be 12 * 12 = 144 sq ft.
+Final Answer: What is the new area of the bathroom?
+The new area of the bathroom is 144 sq ft. The answer is 144.
+Answer: 144
+Is the above answer correct? (Yes/No): No
+
+Q: Unique is making biscuits. She has a sheet of dough that is 12 inches by 12 inches. She makes square biscuits and each biscuit is 3 inches by 3 inches. How many biscuits can she make with this dough?
+A: To answer the above question, we need to answer the following subquestions:
+Q1. What is the size of the dough?
+The dough is 12 inches by 12 inches.
+Q2. What is the size of each biscuit?
+Each biscuit is 3 inches by 3 inches.
+Q3. How many rows and columns of biscuits can be made from the dough?
+This means that the dough can be divided into 4 rows and 4 columns of biscuits.
+Q4. How many biscuits can she make with this dough?
+So, she can make 4 * 4 = 16 biscuits.
+Final Answer: How many biscuits can Unique make?
+She can make 16 biscuits. The answer is 16.
+Answer: 16
+Is the above answer correct? (Yes/No): Yes
+
+Q: A jar full of marbles is sitting on a table. Half of the marbles are blue, a quarter of them are red, 27 of them are green, and 14 of them are yellow. How many marbles are in the jar?
+A: To answer the above question, we need to answer the following subquestions:
+Q1. What is the distribution of the marbles?
+Half of the marbles are blue, a quarter of them are red, 27 of them are green, and 14 of them are yellow.
+Q2. How can we calculate the total number of marbles?
+This means that the total number of marbles must be half of the number of blue marbles, plus a quarter of the number of red marbles, plus 27 green marbles, plus 14 yellow marbles.
+Q3. What is the total number of marbles?
+The total number of marbles is 2 * (half of the number of blue marbles) + 4 * (a quarter of the number of red marbles) + 27 + 14.
+Final Answer: How many marbles are in the jar?
+The answer is 2.
+Answer: 2
+Is the above answer correct? (Yes/No): No
+
+Q: Our small city has two buses.  Each bus can have a capacity of 1/6 as much as the train, which has a capacity of 120 people.  What is the combined capacity of the two buses?
+A: To answer the above question, we need to answer the following subquestions:
+Q1. What is the capacity of the train?
+The train has a capacity of 120 people.
+Q2. What is the capacity of each bus compared to the train?
+Each bus can have 1/6 as much as the train.
+Q3. What is the capacity of each bus?
+That means each bus can have 120 / 6 = 20 people.
+Q4. What is the combined capacity of the two buses?
+There are two buses, so the combined capacity of the two buses is 2 * 20 = 40 people.
+Final Answer: What is the combined capacity of the two buses?
+The combined capacity of the two buses is 40 people. The answer is 40.
+Answer: 40
+Is the above answer correct? (Yes/No): Yes
+
+Q: Aliens and Martians have different numbers of limbs. Aliens have three arms and eight legs, while Martians have half as many legs and twice as many arms. How many more limbs will five aliens have than five Martians?
+A: To answer the above question, we need to answer the following subquestions:
+Q1. How many limbs do Aliens have?
+Aliens have 3 arms and 8 legs.
+Q2. How many limbs do Martians have?
+Martians have 3 * 2 = 6 arms and 8 / 2 = 4 legs.
+Q3. How many limbs do Aliens and Martians have in total?
+So, aliens have 3 + 8 = 11 limbs and Martians have 6 + 4 = 10 limbs.
+Q4. How many more limbs do Aliens have than Martians?
+Aliens have 11 - 10 = 1 more limb than Martians.
+Q5. How many more limbs will five aliens have than five Martians?
+If we have 5 aliens and 5 Martians, then the aliens will have 5 * 1 = 5 more limbs than the Martians.
+Final Answer: How many more limbs will five aliens have than five Martians?
+The aliens will have 5 more limbs than the Martians. The answer is 5.
+Answer: 5
+Is the above answer correct? (Yes/No): Yes
+
+Q: A marathon is 26 miles.  He can run the first 10 miles in 1 hour.  For the remaining miles he runs at 80% that pace.  How long does the race take?
+A: To answer the above question, we need to answer the following subquestions:
+Q1. How many miles does he run in the first hour?
+He runs the first 10 miles in 1 hour.
+Q2. What is his pace for the first 10 miles?
+That means he runs 10 miles in 1 hour.
+Q3. What is his pace per mile?
+So he runs 1 mile in 1/10 hour.
+Q4. What is his pace for the remaining miles?
+He runs the remaining 16 miles at 80% of that pace.
+Q5. How long does he take to run the remaining miles?
+So he runs 16 miles in 16/10 * 1/0.8 = 2 hours.
+Final Answer: How long does the race take?
+The race takes 2 hours. The answer is 2.
+Answer: 2
+Is the above answer correct? (Yes/No): No
+
+Q: Abby is building 2 raised beds to grow vegetables.  The beds are both 8 feet long, 4 feet wide and 1 foot high.  Each bag of soil has 4 cubic feet.  How many bags of soil will she need?
+A: To answer the above question, we need to answer the following subquestions:
+Q1. What are the dimensions of the beds?
+The beds are 8 feet long, 4 feet wide and 1 foot high.
+Q2. How many cubic feet is each bed?
+This means they are 8 * 4 * 1 = 32 cubic feet each.
+Q3. How many cubic feet of soil does she need in total?
+She is building 2 beds, so in total she needs 2 * 32 = 64 cubic feet of soil.
+Q4. How many bags of soil does she need?
+Each bag has 4 cubic feet, so she needs 64 / 4 = 16 bags.
+Final Answer: How many bags of soil will she need?
+She will need 16 bags. The answer is 16.
+Answer: 16
+Is the above answer correct? (Yes/No): Yes

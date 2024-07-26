@@ -1,0 +1,55 @@
+Q: Is the following sentence plausible? “Kyle Palmieri was called for slashing.”
+A:
+1. Kyle Palmieri is a hockey player.
+2. Being called for slashing is part of hockey.
+3. So the answer is yes.
+Is the above answer correct? (Yes/No): Yes
+
+Q: Is the following sentence plausible? “Joao Moutinho caught the screen pass in the NFC championship.”
+A:
+1. Joao Moutinho is an American football player.
+2. The NFC championship is part of American football.
+3. So the answer is yes.
+Is the above answer correct? (Yes/No): No
+
+Q: Is the following sentence plausible? “Carson Wentz set the pick and roll.”
+A:
+1. Carson Wentz is an American football player.
+2. Pick and roll is part of basketball, not football.
+3. So the answer is no.
+Is the above answer correct? (Yes/No): Yes
+
+Q: Is the following sentence plausible? “Jonas Valanciunas beat the buzzer.”
+A:
+1. Jonas Valanciunas is a basketball player.
+2. Beating the buzzer is part of baseball.
+3. So the answer is no.
+Is the above answer correct? (Yes/No): No
+
+Q: Is the following sentence plausible? “Jamel Murray was perfect from the line.”
+A:
+1. Jamal Murray is a soccer player.
+2. Being perfect from the line is part of basketball.
+3. So the answer is no.
+Is the above answer correct? (Yes/No): No
+
+Q: Is the following sentence plausible? “Sam Darnold passed the puck.”
+A:
+1. Sam Darnold is a American football player.
+2. Passing the puck is part of hockey, not American football.
+3. So the answer is no.
+Is the above answer correct? (Yes/No): Yes
+
+Q: Is the following sentence plausible? “Draymond Green threw a touchdown.”
+A:
+1. Draymond Green is a football player.
+2. Throwing a touchdown is part of football.
+3. So the answer is yes.
+Is the above answer correct? (Yes/No): No
+
+Q: Is the following sentence plausible? “Malcolm Brogdon banked the shot in.”
+A:
+1. Malcolm Brogdon is a basketball player.
+2. Banking the shot in is part of basketball.
+3. So the answer is yes.
+Is the above answer correct? (Yes/No): Yes

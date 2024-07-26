@@ -1,0 +1,24 @@
+
+// 1. What is the value of Sainsbury's?
+// Sainsbury's has a value of £17.6 billion.
+// 2. What is the value of Tesco?
+// Tesco has a value of £25.6 billion.
+// 3. What is the maximum amount that Sainsbury's can afford to buy Tesco?
+// Sainsbury's can afford to buy Tesco only if the value of Sainsbury's is less than or equal to the value of Tesco.
+
+// Then, we represent these answers in Datalog:
+// 1. Sainsbury's has a value of £17.6 billion.
+.decl Has_value(Company:symbol, Value:float)
+Has_value("Sainsbury's", 17.6).
+// 2. Tesco has a value of £25.6 billion.
+Has_value("Tesco", 25.6).
+// 3. Sainsbury's can afford to buy Tesco only if the value of Sainsbury's is less than or equal to the value of Tesco.
+Sainsbury's can afford Tesco if and only if Has_value("Sainsbury's", value1), Has_value("Tesco", value2), value1 <= value2.
+
+// Now, we derive the final answer: Could Sainsbury's buy Tesco?
+// The answer is Yes only if Sainsbury's has enough money to buy Tesco.
+.decl Answer()
+Answer() :- Sainsbury's can afford Tesco.
+.output Answer
+
+

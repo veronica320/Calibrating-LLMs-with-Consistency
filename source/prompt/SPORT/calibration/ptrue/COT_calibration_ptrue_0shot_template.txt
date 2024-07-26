@@ -1,0 +1,4 @@
+Q: Is the following statement plausible? "[QUESTION]"
+A:
+[REASONING_CHAIN]
+Is the above answer correct? (Yes/No):

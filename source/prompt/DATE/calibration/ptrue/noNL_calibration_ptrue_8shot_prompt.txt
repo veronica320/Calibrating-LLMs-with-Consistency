@@ -1,0 +1,90 @@
+Q: The first day of 2019 is a Tuesday, and today is the first Monday of 2019. What is the date today in MM/DD/YYYY?
+A:
+1. from datetime import date, time, datetime
+2. from dateutil.relativedelta import relativedelta
+3. date_first_day_of_2019 = date(2019,1,1)
+4. date_today = date_first_day_of_2019 + relativedelta(days=6)
+5. answer = date_today.strftime("%m/%d/%Y")
+6. print(answer)
+Execution result: 01/07/2019
+Is the above answer correct? (Yes/No): Yes
+
+Q: The day before yesterday was 11/23/1933. What is the date 10 days ago in MM/DD/YYYY?
+A:
+1. from datetime import date, time, datetime
+2. from dateutil.relativedelta import relativedelta
+3. date_day_before_yesterday = date(1933,11,23)
+4. date_10days_ago = date_day_before_yesterday - relativedelta(days=10)
+5. answer = date_10days_ago.strftime("%m/%d/%Y")
+6. print(answer)
+Execution result: 11/13/1933
+Is the above answer correct? (Yes/No): No
+
+Q: Yesterday, Jan 21, 2011, Jane ate 2 pizzas and 5 wings. What is the date 24 hours later in MM/DD/YYYY?
+A:
+1. from datetime import date, time, datetime
+2. from dateutil.relativedelta import relativedelta
+3. date_yesterday = date(2011,1,21)
+4. date_24hours_later = date_yesterday + relativedelta(days=1)
+5. answer = date_24hours_later.strftime("%m/%d/%Y")
+6. print(answer)
+Execution result: 01/22/2011
+Is the above answer correct? (Yes/No): No
+
+Q: Today is 9/7. Jane is watching NFL 2003. What is the date one week from today in MM/DD/YYYY?
+A:
+1. from datetime import date, time, datetime
+2. from dateutil.relativedelta import relativedelta
+3. date_today = date(2003,9,7)
+4. date_1week_from_today = date_today + relativedelta(weeks=1)
+5. answer = date_1week_from_today.strftime("%m/%d/%YY")
+6. print(answer)
+Execution result: 09/14/2003
+Is the above answer correct? (Yes/No): Yes
+
+Q: 2015 is coming in 36 hours. What is the date one week from today in MM/DD/YYYY?
+A:
+1. from datetime import date, time, datetime
+2. from dateutil.relativedelta import relativedelta
+3. date_today = date(2014,12,31)
+4. date_1week_from_today = date_today + relativedelta(weeks=1)
+5. date_2015 = date_today + relativedelta(days=36)
+6. answer = date_1week_from_today.strftime("%m/%d/%Y")
+7. print(answer)
+Execution result: 01/07/2015
+Is the above answer correct? (Yes/No): No
+
+Q: Jane and John married on Jan 2, 1958. Today is their golden wedding anniversary. What is the date one week from today in MM/DD/YYYY?
+A:
+1. from datetime import date, time, datetime
+2. from dateutil.relativedelta import relativedelta
+3. date_married = date(1958,1,2)
+4. date_today = date_married + relativedelta(years=50)
+5. date_1week_from_today = date_today + relativedelta(weeks=1)
+6. answer = date_1week_from_today.strftime("%m/%d/%Y")
+7. print(answer)
+Execution result: 01/09/2008
+Is the above answer correct? (Yes/No): Yes
+
+Q: On May 9th, 2017 Jane bought 40 eggs. She ate one per day. Today she ran out of eggs. What is the date one week ago from today in MM/DD/YYYY?
+A:
+1. from datetime import date, time, datetime
+2. from dateutil.relativedelta import relativedelta
+3. date_today = date(2017,5,9)
+4. date_1week_ago = date_today - relativedelta(weeks=1)
+5. date_ran_out_of_eggs = date_today + relativedelta(days=31)
+6. answer = date_1week_ago.strftime("%m/%d/%Y")
+7. print(answer)
+Execution result: 05/02/2017
+Is the above answer correct? (Yes/No): No
+
+Q: In the US, Thanksgiving is on the fourth Thursday of November. Today is the US Thanksgiving of 2001. What is the date one year ago from today in MM/DD/YYYY?
+A:
+1. from datetime import date, time, datetime
+2. from dateutil.relativedelta import relativedelta
+3. date_today = date(2001,11,22)
+4. date_1year_ago = date_today - relativedelta(years=1)
+5. answer = date_1year_ago.strftime("%m/%d/%Y")
+6. print(answer)
+Execution result: 11/22/2000
+Is the above answer correct? (Yes/No): Yes

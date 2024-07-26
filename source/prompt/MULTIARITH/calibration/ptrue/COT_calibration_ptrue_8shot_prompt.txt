@@ -1,0 +1,82 @@
+Q: Jame gets 20 singing lessons.  He gets the first lesson free and after the first 10 paid lessons he only needs to pay for every other lesson.  Each lesson is $5.  His uncle pays for half.  How much does James pay?
+A:
+1. James gets 20 lessons.
+2. The first one is free, so he pays for 19 lessons.
+3. He pays for every other lesson after the first 10, so he pays for 9 lessons.
+4. Each lesson is $5, so he pays 9 * $5 = $45.
+5. His uncle pays for half, so he pays $45 / 2 = $22.50.
+6. The answer is 22.50.
+Answer: 22
+Is the above answer correct? (Yes/No): No
+
+Q: The size of a bathroom is 96 sq ft. If the width of the bathroom is 8 feet and the owner wants to extend it by 2 feet on each side, what is the new area of the bathroom?
+A:
+1. The width of the bathroom is 8 feet.
+2. The owner wants to extend it by 2 feet on each side.
+3. This means the new width will be 8 + 2 + 2 = 12 feet.
+4. The area of the bathroom is 96 sq ft.
+5. The new area will be 12 * 12 = 144 sq ft.
+6. The answer is 144.
+Answer: 144
+Is the above answer correct? (Yes/No): No
+
+Q: Unique is making biscuits. She has a sheet of dough that is 12 inches by 12 inches. She makes square biscuits and each biscuit is 3 inches by 3 inches. How many biscuits can she make with this dough?
+A:
+1. The dough is 12 inches by 12 inches.
+2. Each biscuit is 3 inches by 3 inches.
+3. This means that the dough can be divided into 4 rows and 4 columns of biscuits.
+4. So, she can make 4 * 4 = 16 biscuits.
+5. The answer is 16.
+Answer: 16
+Is the above answer correct? (Yes/No): Yes
+
+Q: A jar full of marbles is sitting on a table. Half of the marbles are blue, a quarter of them are red, 27 of them are green, and 14 of them are yellow. How many marbles are in the jar?
+A:
+1. Half of the marbles are blue, a quarter of them are red, 27 of them are green, and 14 of them are yellow.
+2. This means that the total number of marbles must be half of the number of blue marbles, plus a quarter of the number of red marbles, plus 27 green marbles, plus 14 yellow marbles.
+3. So, the total number of marbles must be 2 * (half of the number of blue marbles) + 4 * (a quarter of the number of red marbles) + 27 + 14.
+4. The answer is 2 * (half of the number of blue marbles) + 4 * (a quarter of the number of red marbles) + 27 + 14.
+Answer: 2
+Is the above answer correct? (Yes/No): No
+
+Q: Our small city has two buses.  Each bus can have a capacity of 1/6 as much as the train, which has a capacity of 120 people.  What is the combined capacity of the two buses?
+A:
+1. The train has a capacity of 120 people.
+2. Each bus can have 1/6 as much as the train.
+3. That means each bus can have 120 / 6 = 20 people.
+4. There are two buses, so the combined capacity of the two buses is 2 * 20 = 40 people.
+5. The answer is 40.
+Answer: 40
+Is the above answer correct? (Yes/No): Yes
+
+Q: Aliens and Martians have different numbers of limbs. Aliens have three arms and eight legs, while Martians have half as many legs and twice as many arms. How many more limbs will five aliens have than five Martians?
+A:
+1. Aliens have 3 arms and 8 legs.
+2. Martians have 3 * 2 = 6 arms and 8 / 2 = 4 legs.
+3. So, aliens have 3 + 8 = 11 limbs and Martians have 6 + 4 = 10 limbs.
+4. Aliens have 11 - 10 = 1 more limb than Martians.
+5. If we have 5 aliens and 5 Martians, then the aliens will have 5 * 1 = 5 more limbs than the Martians.
+6. The answer is 5.
+Answer: 5
+Is the above answer correct? (Yes/No): Yes
+
+Q: A marathon is 26 miles.  He can run the first 10 miles in 1 hour.  For the remaining miles he runs at 80% that pace.  How long does the race take?
+A:
+1. He runs the first 10 miles in 1 hour.
+2. That means he runs 10 miles in 1 hour.
+3. So he runs 1 mile in 1/10 hour.
+4. He runs the remaining 16 miles at 80% of that pace.
+5. So he runs 16 miles in 16/10 * 1/0.8 = 2 hours.
+6. The answer is 2 hours.
+Answer: 2
+Is the above answer correct? (Yes/No): No
+
+Q: Abby is building 2 raised beds to grow vegetables.  The beds are both 8 feet long, 4 feet wide and 1 foot high.  Each bag of soil has 4 cubic feet.  How many bags of soil will she need?
+A:
+1. The beds are 8 feet long, 4 feet wide and 1 foot high.
+2. This means they are 8 * 4 * 1 = 32 cubic feet each.
+3. She is building 2 beds, so in total she needs 2 * 32 = 64 cubic feet of soil.
+4. Each bag has 4 cubic feet, so she needs 64 / 4 = 16 bags.
+5. The answer is 16.
+Answer: 16
+Is the above answer correct? (Yes/No): Yes

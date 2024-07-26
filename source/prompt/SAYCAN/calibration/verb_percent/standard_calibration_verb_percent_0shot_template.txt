@@ -1,0 +1,3 @@
+User query: [QUESTION]
+Plan: [REASONING CHAIN]
+How confident are you in the above plan (0-100%)?:

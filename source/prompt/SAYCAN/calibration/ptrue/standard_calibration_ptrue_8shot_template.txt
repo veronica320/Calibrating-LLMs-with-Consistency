@@ -1,0 +1,3 @@
+User query: [QUESTION]
+Plan: [REASONING CHAIN]
+Is the above plan correct? (Yes/No):

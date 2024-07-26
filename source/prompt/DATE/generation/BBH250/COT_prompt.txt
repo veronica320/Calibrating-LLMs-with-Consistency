@@ -1,0 +1,49 @@
+Q: Today is the last day of the first quarter of 2008. What is the date one year ago from today in MM/DD/YYYY?
+A: 
+If today is the last day of the first quarter of 2008, then today is 03/31/2008.
+One year ago from today is 03/31/2007.
+So the answer is 03/31/2007.
+
+Q: Today is the palindrome day of 2020, because the MMDDYYYY format of the date is the same backwards as forwards. What is the date yesterday in MM/DD/YYYY?
+A: 
+Today is the palindrome day of 2020, so today is 02/02/2020, which is the same backwards as forwards.
+Yesterday is 02/01/2020.
+So the answer is 02/01/2020.
+
+Q: Jane got her job in 2016. Today is her 3-year work anniversary. She still remember that on Dec 2, her second day at work, she spilled coffee on her laptop. What is the date one week from today in MM/DD/YYYY?
+A: 
+Jane got her job in 2016.
+Dec 2 was her second day at work, so she got her job on Dec 1, 2016.
+Today is her 3-year work anniversary, so today is Dec 1, 2019.
+One week from today is Dec 8, 2019, which is 12/08/2019.
+So the answer is 12/08/2019.
+
+Q: Jane visits the bookstore on the 16th of each month starting from the October of 2009. It is her 5th visit to the bookstore today. What is the date 10 days ago in MM/DD/YYYY?
+A: 
+Jane visits the bookstore on the 16th of each month starting from the October of 2009, which is 10/16/2009.
+It is her 5th visit to the bookstore today, so today is 02/16/2010.
+10 days ago is 02/06/2010.
+So the answer is 02/06/2010.
+
+Q: May 6, 1992 is like yesterday to Jane, but that is actually ten years ago. What is the date a month ago in MM/DD/YYYY?
+A: 
+May 6, 1992 is actually ten years ago, so today is 05/06/2002.
+A month ago from today is 04/06/2002.
+So the answer is 04/06/2002.
+
+Q: The concert was scheduled to be on 06/01/1943, but was delayed by one day to today. What is the date today in MM/DD/YYYY?
+A: 
+The concert was scheduled to be on 06/01/1943, but was delayed by one day to today, so today is 06/02/1943.
+So the answer is 06/02/1943.
+
+Q: This is the last day of 1899. What is the date today in MM/DD/YYYY?
+A: 
+The last day of 1899 is 12/31/1899.
+So the date today is 12/31/1899.
+So the answer is 12/31/1899.
+
+Q: Today is Apr 10, 1985. Jane's appointment will be 3 days later. What is the date a month ago in MM/DD/YYYY?
+A: 
+Today is Apr 10, 1985.
+A month ago from today is 03/10/1985.
+So the answer is 03/10/1985.

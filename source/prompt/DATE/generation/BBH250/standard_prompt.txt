@@ -1,0 +1,23 @@
+Q: Today is the last day of the first quarter of 2008. What is the date one year ago from today in MM/DD/YYYY?
+A: The answer is 03/31/2007.
+
+Q: Today is the palindrome day of 2020, because the MMDDYYYY format of the date is the same backwards as forwards. What is the date yesterday in MM/DD/YYYY?
+A: The answer is 02/01/2020.
+
+Q: Jane got her job in 2016. Today is her 3-year work anniversary. She still remember that on Dec 2, her second day at work, she spilled coffee on her laptop. What is the date one week from today in MM/DD/YYYY?
+A: The answer is 12/08/2019.
+
+Q: Jane visits the bookstore on the 16th of each month starting from the October of 2009. It is her 5th visit to the bookstore today. What is the date 10 days ago in MM/DD/YYYY?
+A: The answer is 02/06/2010.
+
+Q: May 6, 1992 is like yesterday to Jane, but that is actually ten years ago. What is the date a month ago in MM/DD/YYYY?
+A: The answer is 04/06/2002.
+
+Q: The concert was scheduled to be on 06/01/1943, but was delayed by one day to today. What is the date today in MM/DD/YYYY?
+A: The answer is 06/02/1943.
+
+Q: This is the last day of 1899. What is the date today in MM/DD/YYYY?
+A: The answer is 12/31/1899.
+
+Q: Today is Apr 10, 1985. Jane's appointment will be 3 days later. What is the date a month ago in MM/DD/YYYY?
+A: The answer is 03/10/1985.

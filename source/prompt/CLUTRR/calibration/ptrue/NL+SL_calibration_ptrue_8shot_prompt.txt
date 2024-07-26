@@ -1,0 +1,97 @@
+Context: [Jason] always had some great adventure planned for his granddaughter [Guillermina] when she came to visit. So, naturally, when [Myrna] told her daughter [Guillermina] that they would be going to visit [Jason] she could hardly contain herself.
+Question: How is [Jason] related to [Myrna]?
+# 1. How is [Jason] related to [Guillermina]? (independent, support: "[Jason] always had some great adventure planned for his granddaughter [Guillermina] when she came to visit.")
+relation(Jason, Guillermina) = grandfather
+# 2. How is [Guillermina] related to [Myrna]? (independent, support: "So, naturally, when [Myrna] told her daughter [Guillermina] that they would be going to visit [Jason] she could hardly contain herself.")
+relation(Guillermina, Myrna) = daughter
+# 3. Final answer: How is [Jason] related to [Myrna]? (depends on 1, 2)
+relation(Jason, Myrna) = relation(Jason, Guillermina) @ relation(Guillermina, Myrna)
+Execution result: father
+Is the above answer correct? (Yes/No): Yes
+
+Context: [Joe] and her sister [Michele] decided to take a trip to Mexico together. [Jason] was giving his granddaughter [Michele] a piggy back ride.
+Question: How is [Joe] related to [Jason]?
+# 1. How is [Joe] related to [Michele]? (independent, support: "[Joe] and her sister [Michele] decided to take a trip to Mexico together.")
+relation(Joe, Michele) = sister
+# 2. How is [Michele] related to [Jason]? (independent, support: "[Jason] was giving his granddaughter [Michele] a piggy back ride.")
+relation(Michele, Jason) = granddaughter
+# 3. Final answer: How is [Joe] related to [Jason]? (depends on 1, 2)
+relation(Joe, Jason) = relation(Joe, Michele) @ relation(Michele, Jason)
+Execution result: granddaughter
+Is the above answer correct? (Yes/No): No
+
+Context: [Clarence] and [Eunice], a married couple, took [Eunice]'s mother [Valerie] out to lunch for her birthday. [Alan] is proud to be married to his loving wife [Valerie].
+Question: How is [Clarence] related to [Alan]?
+# 1. How is [Clarence] related to [Eunice]? (independent, support: "[Clarence] and [Eunice], a married couple, took [Eunice]'s mother [Valerie] out to lunch for her birthday.")
+relation(Clarence, Eunice) = husband
+# 2. How is [Eunice] related to [Valerie]? (independent, support: "[Clarence] and [Eunice], a married couple, took [Eunice]'s mother [Valerie] out to lunch for her birthday.")
+relation(Eunice, Valerie) = mother
+# 3. How is [Valerie] related to [Alan]? (independent, support: "[Alan] is proud to be married to his loving wife [Valerie].")
+relation(Valerie, Alan) = wife
+# 4. Final answer: How is [Clarence] related to [Alan]? (depends on 1, 2, 3)
+relation(Clarence, Alan) = relation(Clarence, Eunice) @ relation(Eunice, Valerie) @ relation(Valerie, Alan)
+Execution result: father-in-law
+Is the above answer correct? (Yes/No): No
+
+Context: [Carlos] enjoys the company of his sibling [Eunice]. [Alan] loves his daughter [Annie]. [Alan] seems to not get along with his daughter [Eunice].
+Question: How is [Annie] related to [Carlos]?
+# 1. How is [Annie] related to [Alan]? (independent, support: "[Alan] loves his daughter [Annie].")
+relation(Annie, Alan) = daughter
+# 2. How is [Alan] related to [Eunice]? (independent, support: "[Alan] seems to not get along with his daughter [Eunice].")
+relation(Alan, Eunice) = father
+# 3. How is [Eunice] related to [Carlos]? (independent, support: "[Carlos] enjoys the company of his sibling [Eunice].")
+relation(Eunice, Carlos) = sibling
+# 4. Final answer: How is [Annie] related to [Carlos]? (depends on 1, 2, 3)
+relation(Annie, Carlos) = relation(Annie, Alan) @ relation(Alan, Eunice) @ relation(Eunice, Carlos)
+Execution result: unknown
+Is the above answer correct? (Yes/No): No
+
+Context: [Carlos] and his wife [Venita] are going to be at the play. [Carlos] went to visit his sister [Elizabeth] to the hospital last week. [Elizabeth] 'father, [Alan], recently went back to school.
+Question: How is [Alan] related to [Venita]?
+# 1. How is [Alan] related to [Elizabeth]? (independent, support: "[Elizabeth] 'father, [Alan], recently went back to school.")
+relation(Alan, Elizabeth) = father
+# 2. How is [Elizabeth] related to [Carlos]? (independent, support: "[Carlos] went to visit his sister [Elizabeth] to the hospital last week.")
+relation(Elizabeth, Carlos) = sister
+# 3. How is [Carlos] related to [Venita]? (independent, support: "[Carlos] and his wife [Venita] are going to be at the play.")
+relation(Carlos, Venita) = husband
+# 4. Final answer: How is [Alan] related to [Venita]? (depends on 1, 2, 3)
+relation(Alan, Venita) = relation(Alan, Elizabeth) @ relation(Elizabeth, Carlos) @ relation(Carlos, Venita)
+Execution result: father-in-law
+Is the above answer correct? (Yes/No): Yes
+
+Context: [Gabrielle] drove her daughter [Dorothy] to the hospital. [Dorothy]'s son [Vincent] showed up shortly after.
+Question: How is [Vincent] related to [Gabrielle]?
+# 1. How is [Vincent] related to [Dorothy]? (independent, support: "[Dorothy]'s son [Vincent] showed up shortly after.")
+relation(Vincent, Dorothy) = son
+# 2. How is [Dorothy] related to [Gabrielle]? (independent, support: "[Gabrielle] drove her daughter [Dorothy] to the hospital.")
+relation(Dorothy, Gabrielle) = daughter
+# 3. Final answer: How is [Vincent] related to [Gabrielle]? (depends on 1, 2)
+relation(Vincent, Gabrielle) = relation(Vincent, Dorothy) @ relation(Dorothy, Gabrielle)
+Execution result: grandson
+Is the above answer correct? (Yes/No): Yes
+
+Context: [Elliott] is excited to cheer on his brother [James] in the homecoming game tonight. [Alan] love his brother [Elliott]. They are always playing together. [Alan] loves his daughter [Annie].
+Question: How is [Annie] related to [James]?
+# 1. How is [Annie] related to [Alan]? (independent, support: "[Alan] loves his daughter [Annie].")
+relation(Annie, Alan) = daughter
+# 2. How is [Alan] related to [Elliott]? (independent, support: "[Alan] love his brother [Elliott].")
+relation(Alan, Elliott) = brother
+# 3. How is [Elliott] related to [James]? (independent, support: "[Elliott] is excited to cheer on his brother [James] in the homecoming game tonight.")
+relation(Elliott, James) = brother
+# 4. Final answer: How is [Annie] related to [James]? (depends on 1, 2, 3)
+relation(Annie, James) = relation(Annie, Alan) @ relation(Alan, Elliott) @ relation(Elliott, James)
+Execution result: niece
+Is the above answer correct? (Yes/No): Yes
+
+Context: [Sandra] loved to care for her newborn child [Lee]. [James] bought a book for his son [Anthony]. [James] bought his wife [Sandra] roses.
+Question: How is [Lee] related to [Anthony]?
+# 1. How is [Lee] related to [Sandra]? (independent, support: "[Sandra] loved to care for her newborn child [Lee].")
+relation(Lee, Sandra) = child
+# 2. How is [Sandra] related to [James]? (independent, support: "[James] bought his wife [Sandra] roses.")
+relation(Sandra, James) = wife
+# 3. How is [James] related to [Anthony]? (independent, support: "[James] bought a book for his son [Anthony].")
+relation(James, Anthony) = father
+# 4. Final answer: How is [Lee] related to [Anthony]? (depends on 1, 2, 3)
+relation(Lee, Anthony) = relation(Lee, Sandra) @ relation(Sandra, James) @ relation(James, Anthony)
+Execution result: unknown
+Is the above answer correct? (Yes/No): No

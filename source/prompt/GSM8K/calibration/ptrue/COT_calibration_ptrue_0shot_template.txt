@@ -1,0 +1,5 @@
+Q: [QUESTION]
+A:
+[REASONING_CHAIN]
+Answer: [ANSWER]
+Is the above answer correct? (Yes/No):

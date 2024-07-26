@@ -1,0 +1,3 @@
+User query: [QUESTION]
+Explanation: [REASONING CHAIN]
+How confident are you in the above plan? (choose from "Almost no chance", "Highly unlikely", "Unlikely", "Probably not", "About even", "Better than even", "Likely", "Probably", "Highly likely", "Almost certain"):
