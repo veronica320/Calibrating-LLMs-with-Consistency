@@ -23,7 +23,7 @@ if __name__ == "__main__":
 	Parser = argparse.ArgumentParser()
 	Parser.add_argument("--dataset_name", help="The name of the dataset.")
 	Parser.add_argument("--split", help="The split of the dataset.")
-	Parser.add_argument("--LM", help="The name of the LM.", required=True, choices=["code002", "gpt-3.5-turbo", "gpt4", "llama-7B", "llama-13B", "llama-70B", "mistral-7B", "mistral-7B-instruct", "olmo-7B", "olmo-7B-instruct", "olmo-7B-instruct-rlhf"])
+	Parser.add_argument("--LM", help="The name of the LM.", required=True, choices=["code002", "gpt-3.5-turbo", "gpt4", "llama-7B", "llama-13B", "llama-70B", "mistral-7B", "mistral-7B-instruct", "olmo-7B", "olmo-7B-it", "olmo-7B-it-rl"])
 	Parser.add_argument("--output_format", help="The format of the output")
 	Parser.add_argument("--n", help="The number of votes", type=int, default=1)
 	Parser.add_argument("--debug", help="If true, only run on the first 10 examples.", action="store_true")
@@ -34,7 +34,6 @@ if __name__ == "__main__":
 	n = args.n
 	dataset_name = args.dataset_name
 	split = args.split
-	preds_fn = args.preds_fn
 	debug = args.debug
 
 	api_key_ids = APIKEY_ID_DICT[LM]
@@ -46,7 +45,7 @@ if __name__ == "__main__":
 	else:
 		n_str = ""
 
-	config_frn = f"source/configuration/config_files/{dataset_name}/{LM}_{output_format}{n_str}.json"
+	config_frn = f"source/configuration/config_files/{LM}_{output_format}{n_str}.json"
 	config = Config.from_json_file(config_frn)
 	config.split = split
 	config.dataset_name = dataset_name
