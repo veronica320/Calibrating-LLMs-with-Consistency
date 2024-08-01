@@ -4,7 +4,7 @@ This directory contains code and files related to the model configuration, in or
 
 The `configuration.py` file contains the Config class. See the definition of each field in the `init()` funciton.
 
-The `config_files/` directory contains model configuration files on all evaluation datasets. Each dataset has a subdirectory. Under it, each configuration file has the name in the format of `{model_name}.json`, e.g., `code002_NL+SL.json`. 
+The `config_files/` directory contains model configuration files. Each configuration file has the name in the format of `{model_name}.json`, e.g., `code002_NL+SL.json`. 
 The fields specify hyperparameter values corresponding to those in `source/configuration/configuration.py`.
 
 For example:
