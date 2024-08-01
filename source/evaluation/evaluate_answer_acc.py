@@ -97,7 +97,13 @@ def evaluate_acc(dataset,
 			continue
 		pred_id = int(prediction["id"])
 
-		assert gold_id == pred_id
+		try:
+			assert gold_id == pred_id
+		except AssertionError:
+			print("Error in matching gold and pred ids.")
+			print("Gold id: ", gold_id)
+			print("Pred id: ", pred_id)
+			exit(-1)
 
 		# extract the gold answer and the predicted answer
 		try:
@@ -132,7 +138,7 @@ if __name__ == "__main__":
 	Parser.add_argument("--dataset_name", help="The name of the dataset.", required=True)
 	Parser.add_argument("--split", help="The split of the dataset.", required=True)
 	Parser.add_argument("--preds_fn", help="The name of the predictions file.", required=True)
-	Parser.add_argument("--LM", help="The name of the LM.", required=True, choices=["code002", "gpt-3.5-turbo", "gpt4", "llama-7B", "llama-13B", "llama-70B", "mistral-7B", "mistral-7B-instruct", "olmo-7B", "olmo-7B-instruct", "olmo-7B-instruct-rlhf"])
+	Parser.add_argument("--LM", help="The name of the LM.", required=True, choices=["code002", "gpt-3.5-turbo", "gpt4", "llama-7B", "llama-13B", "llama-70B", "mistral-7B", "mistral-7B-instruct", "olmo-7B", "olmo-7B-it", "olmo-7B-it-rl"])
 	Parser.add_argument("--output_format", help="The format of the output.", choices=["standard", "COT", "noNL", "NL+SL", "LtM"], required=True)
 	Parser.add_argument("--n_vote", help="The number of votes", type=int, default=1)
 	Parser.add_argument("--non_empty_only", help="If true, only evaluate on non-empty answers.", action="store_true")

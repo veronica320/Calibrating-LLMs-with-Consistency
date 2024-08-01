@@ -73,7 +73,7 @@ API_KEYS = {
 ```
 Note that your keys should have access to the relevant LM (`gpt-3.5-turbo`, etc.) specified in the configuration you'd like to use.
 
-2. Choose a model configuration you'd like to use. You can use an existing configuration under `configuration/config_files/{dataset_name}` or create a new one. See `configuration/README.md` for details.
+2. Choose a model configuration you'd like to use. You can use an existing configuration under `configuration/config_files/` or create a new one. See `configuration/README.md` for details.
 
 3. Run `source/predict/predict.py`:
 ```
