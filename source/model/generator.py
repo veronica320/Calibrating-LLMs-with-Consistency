@@ -471,7 +471,7 @@ if __name__ == "__main__":
 	else:
 		n_votes_str = f"_n:{n_votes}"
 
-	config_frn = f"source/configuration/config_files/{dataset_name}/{LM}_{output_format}{n_votes_str}.json"
+	config_frn = f"source/configuration/config_files/{LM}_{output_format}{n_votes_str}.json"
 	config = Config.from_json_file(config_frn)
 
 	api_key_ids = ['CCB']

@@ -19,7 +19,7 @@ if __name__ == "__main__":
 	Parser = argparse.ArgumentParser()
 	Parser.add_argument("--dataset_name", help="The name of the dataset.", required=True)
 	Parser.add_argument("--split", help="The split of the dataset.", required=True)
-	Parser.add_argument("--LM", help="The name of the LM.", required=True, choices=["code002", "gpt-3.5-turbo", "gpt4", "llama-7B", "llama-13B", "llama-70B", "mistral-7B", "mistral-7B-instruct", "olmo-7B", "olmo-7B-instruct", "olmo-7B-instruct-rlhf"])
+	Parser.add_argument("--LM", help="The name of the LM.", required=True, choices=["code002", "gpt-3.5-turbo", "gpt4", "llama-7B", "llama-13B", "llama-70B", "mistral-7B", "mistral-7B-instruct", "olmo-7B", "olmo-7B-it", "olmo-7B-it-rl"])
 	Parser.add_argument("--output_format", help="The format of the output.", choices=["standard", "COT", "noNL", "NL+SL", "LtM"], required=True)
 	Parser.add_argument("--n", help="The number of votes.", type=int, default=1)
 	Parser.add_argument("--task_name", help="The name of the task.", choices=["generation", "calibration"], default="generation")
@@ -53,7 +53,7 @@ if __name__ == "__main__":
 
 	calib_str = f"_{calib_method}_{calib_shots}shot" if task_name in ["calibration"] else ""
 
-	config_frn = f"source/configuration/config_files/{dataset_name}/{LM}_{output_format}{n_str}.json"
+	config_frn = f"source/configuration/config_files/{LM}_{output_format}{n_str}.json"
 	config = Config.from_json_file(config_frn)
 	config.dataset_name = dataset_name
 	config.split = split

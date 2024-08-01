@@ -342,7 +342,7 @@ if __name__ == "__main__":
 	calib_method = [None, "ptrue", "verb_ling", "verb_percent"][2]
 	calib_shots = [0, 8][0]
 
-	config_frn = f"source/configuration/config_files/{dataset_name}/{LM}_{output_format}{n_votes_str}.json"
+	config_frn = f"source/configuration/config_files/{LM}_{output_format}{n_votes_str}.json"
 	config = Config.from_json_file(config_frn)
 
 	api_key_ids = ['CCB']

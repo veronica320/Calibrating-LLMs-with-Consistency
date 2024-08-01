@@ -51,7 +51,7 @@ if __name__ == "__main__":
 		api_keys = [API_KEYS[api_key_id] for api_key_id in api_key_ids]
 		org_ids = [ORGANIZATION_IDS[api_key_id] for api_key_id in api_key_ids]
 
-		config_frn = f"source/configuration/config_files/{dataset_name}/{config_name}.json"
+		config_frn = f"source/configuration/config_files/{config_name}.json"
 		config = Config.from_json_file(config_frn)
 		config.split = split
 		config.dataset_name = dataset_name
