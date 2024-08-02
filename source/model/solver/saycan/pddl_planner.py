@@ -204,12 +204,10 @@ if __name__ == "__main__":
 
 	goal = '''
 
+
 (:goal
-	(exists (?p - pepsi)
-		(and
-			(at ?p user)
-			(is-open ?p)
-		)
+	(forall (?l - location)
+		(visited ?l)
 	)
 )
 

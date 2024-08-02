@@ -18,12 +18,10 @@ import argparse
 if __name__ == "__main__":
 	parser = argparse.ArgumentParser()
 	parser.add_argument("--dataset_names", nargs="+", default=["ASDIV", "CLUTRR", "GSM8K", "DATE", "MULTIARITH", "SAYCAN", "SPORT", "STRATEGYQA", "SVAMP"])
-	parser.add_argument("--LMs", nargs="+", default=["code002", "gpt-3.5-turbo", "gpt4", "llama-7B", "llama-13B", "llama-70B", "mistral-7B", "mistral-7B-instruct"])
+	parser.add_argument("--LMs", nargs="+", default=["code002", "gpt-3.5-turbo", "gpt4", "llama-7B", "llama-13B", "llama-70B", "mistral-7B", "mistral-7B-it", "olmo-7B", "olmo-7B-it", "olmo-7B-it-rl"])
 	parser.add_argument("--output_formats", nargs="+", default=["standard", "COT", "LtM", "noNL", "NL+SL"])
-	parser.add_argument("--split", type=str, default="test", choices=["test", "dev_100"])
+	parser.add_argument("--split", type=str, default="test")
 	parser.add_argument("--n_vote", type=int, default=40)
-	parser.add_argument("--start_id", type=int, default=-1)
-	parser.add_argument("--end_id", type=int, default=math.inf)
 	parser.add_argument("--debug", action="store_true")
 	args = parser.parse_args()
 
@@ -33,8 +31,6 @@ if __name__ == "__main__":
 	split = args.split
 	n_vote = args.n_vote
 	debug = args.debug
-	start_id = args.start_id
-	end_id = args.end_id
 
 	for dataset_name, LM, output_format in product(dataset_names, LMs, output_formats):
 		print(f"dataset_name: {dataset_name}, LM: {LM}, output_format: {output_format}...", flush=True)
@@ -86,8 +82,6 @@ if __name__ == "__main__":
 				example_id = int(example["id"])
 				if debug and i >= 10:
 					break
-				if example_id < start_id or example_id >= end_id:
-					continue
 				if "answers" in prediction and prediction["answers"] != []:
 					answers = [extract_pred_answer(dataset_name, {"answer": answer}) for answer in prediction["answers"]]
 				else:
@@ -116,10 +110,13 @@ if __name__ == "__main__":
 					del frequency["[invalid]"]
 
 				# get the most frequent answer
-				most_frequent_answer_str = max(frequency, key=frequency.get)
+				if len(frequency) == 0:
+					most_frequent_answer = "[invalid]"
+				else:
+					most_frequent_answer_str = max(frequency, key=frequency.get)
 
-				most_frequent_answer_id = answer_str_to_id[most_frequent_answer_str]
-				most_frequent_answer = answers[most_frequent_answer_id]
+					most_frequent_answer_id = answer_str_to_id[most_frequent_answer_str]
+					most_frequent_answer = answers[most_frequent_answer_id]
 
 				new_row = {"id": example["id"],
 				           "answer": most_frequent_answer,

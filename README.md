@@ -120,7 +120,7 @@ Run `source/evaluation/evaluate_answer_acc.py` with the following arguments:
 $ python evaluate_answer_acc.py -h
 usage: evaluate_answer_acc.py [-h] --dataset_name DATASET_NAME --split SPLIT
                               --preds_fn PREDS_FN --LM
-                              {code002,gpt-3.5-turbo,gpt4,llama-7B,llama-13B,llama-70B,mistral-7B,mistral-7B-instruct,olmo-7B,olmo-7B-instruct,olmo-7B-instruct-rlhf}
+                              {code002,gpt-3.5-turbo,gpt4,llama-7B,llama-13B,llama-70B,mistral-7B,mistral-7B-it,olmo-7B,olmo-7B-instruct,olmo-7B-instruct-rlhf}
                               --output_format {standard,COT,noNL,NL+SL,LtM}
                               [--n_vote N_VOTE] [--non_empty_only] [--valid_only]
                               [--debug]
@@ -131,7 +131,7 @@ optional arguments:
                         The name of the dataset.
   --split SPLIT         The split of the dataset.
   --preds_fn PREDS_FN   The name of the predictions file.
-  --LM {code002,gpt-3.5-turbo,gpt4,llama-7B,llama-13B,llama-70B,mistral-7B,mistral-7B-instruct,olmo-7B,olmo-7B-instruct,olmo-7B-instruct-rlhf}
+  --LM {code002,gpt-3.5-turbo,gpt4,llama-7B,llama-13B,llama-70B,mistral-7B,mistral-7B-it,olmo-7B,olmo-7B-instruct,olmo-7B-instruct-rlhf}
                         The name of the LM.
   --output_format {standard,COT,noNL,NL+SL,LtM}
                         The format of the output.
@@ -196,23 +196,41 @@ The reformatted predictions will be saved to `output_dir/{dataset_name}/{split}/
 #### Consistency-based calibration
 This is our proposed calibration method using three consistency metrics: agreement, entropy, and first-second distance (FSD).
 
-To use this method, run `source/calibrate/get_confidence_from_consistency.py` with the following arguments:
+To use this method, first run `source/calibrate/get_answers.py` to extract all the answers from the predictions:
 ```
-$ python get_confidence_from_consistency.py -h
-usage: get_confidence_from_consistency.py [-h]
-                                          [--dataset_names DATASET_NAMES [DATASET_NAMES ...]]
-                                          [--LMs LMS [LMS ...]]
-                                          [--output_formats OUTPUT_FORMATS [OUTPUT_FORMATS ...]]
-                                          [--split {test,dev_100}]
-                                          [--consistency_metrics CONSISTENCY_METRICS [CONSISTENCY_METRICS ...]]
-                                          [--n_vote N_VOTE]
+$ python get_answers.py -h
+usage: get_answers.py [-h] [--dataset_names DATASET_NAMES [DATASET_NAMES ...]] [--LMs LMS [LMS ...]]
+                      [--output_formats OUTPUT_FORMATS [OUTPUT_FORMATS ...]] [--split SPLIT] [--n_vote N_VOTE] [--debug]
 
 optional arguments:
   -h, --help            show this help message and exit
   --dataset_names DATASET_NAMES [DATASET_NAMES ...]
   --LMs LMS [LMS ...]
   --output_formats OUTPUT_FORMATS [OUTPUT_FORMATS ...]
-  --split {test,dev_100}
+  --split SPLIT
+  --n_vote N_VOTE
+  --debug
+```
+
+Example:
+```
+python get_answers.py --split test --n_vote 40
+```
+This will extract the answers from predictions for all LMs, datasets, and output formats, where the predictions (n=40) are available, on the test split. The answers will be saved to `output_dir/{dataset_name}/{split}/{LM}_{output_format}{n_str}/predictions_answers.jsonl` for each dataset, LM, and output format.
+
+Next, run `source/calibrate/get_confidence_from_consistency.py` with the following arguments:
+```
+$ python get_confidence_from_consistency.py -h
+usage: get_confidence_from_consistency.py [-h] [--dataset_names DATASET_NAMES [DATASET_NAMES ...]] [--LMs LMS [LMS ...]]
+                                          [--output_formats OUTPUT_FORMATS [OUTPUT_FORMATS ...]] [--split SPLIT]
+                                          [--consistency_metrics CONSISTENCY_METRICS [CONSISTENCY_METRICS ...]] [--n_vote N_VOTE]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --dataset_names DATASET_NAMES [DATASET_NAMES ...]
+  --LMs LMS [LMS ...]
+  --output_formats OUTPUT_FORMATS [OUTPUT_FORMATS ...]
+  --split SPLIT
   --consistency_metrics CONSISTENCY_METRICS [CONSISTENCY_METRICS ...]
   --n_vote N_VOTE
 ```
@@ -267,7 +285,7 @@ To use any of these methods, run `source/predict/predict.py` with the following 
 ```
 $ python predict.py -h
 usage: predict.py [-h] --dataset_name DATASET_NAME --split SPLIT --LM
-                  {code002,gpt-3.5-turbo,gpt4,llama-7B,llama-13B,llama-70B,mistral-7B,mistral-7B-instruct,olmo-7B,olmo-7B-instruct,olmo-7B-instruct-rlhf}
+                  {code002,gpt-3.5-turbo,gpt4,llama-7B,llama-13B,llama-70B,mistral-7B,mistral-7B-it,olmo-7B,olmo-7B-instruct,olmo-7B-instruct-rlhf}
                   --output_format {standard,COT,noNL,NL+SL,LtM} [--n N]
                   [--task_name {calibration}]
                   [--calib_method {ptrue,verb_ling,verb_percent,None}]
@@ -279,7 +297,7 @@ optional arguments:
   --dataset_name DATASET_NAME
                         The name of the dataset.
   --split SPLIT         The split of the dataset.
-  --LM {code002,gpt-3.5-turbo,gpt4,llama-7B,llama-13B,llama-70B,mistral-7B,mistral-7B-instruct,olmo-7B,olmo-7B-instruct,olmo-7B-instruct-rlhf}
+  --LM {code002,gpt-3.5-turbo,gpt4,llama-7B,llama-13B,llama-70B,mistral-7B,mistral-7B-it,olmo-7B,olmo-7B-instruct,olmo-7B-instruct-rlhf}
                         The name of the LM.
   --output_format {standard,COT,noNL,NL+SL,LtM}
                         The format of the output.

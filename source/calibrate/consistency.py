@@ -38,6 +38,9 @@ def calculate_consistency(answers, method="entropy"):
 		else:
 			frequency[answer_str] = 1
 
+	if len(answers) == 0:
+		return 0.0
+
 	if "[invalid]" in frequency and len(frequency) > 1:
 		del frequency["[invalid]"]
 

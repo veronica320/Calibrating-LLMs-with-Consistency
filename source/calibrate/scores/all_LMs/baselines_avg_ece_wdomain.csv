@@ -34,8 +34,8 @@ mistral-7B,MHQA,0.184,0.120,0.135,nan,nan,0.271,nan,nan
 mistral-7B,Plan.,0.260,0.194,0.231,nan,nan,0.198,nan,nan
 mistral-7B,Relation.,0.207,0.295,0.245,nan,nan,0.561,nan,nan
 mistral-7B,average,0.186,0.144,0.159,nan,nan,0.322,nan,nan
-mistral-7B-instruct,MWP,0.154,0.108,0.127,nan,nan,0.349,nan,nan
-mistral-7B-instruct,MHQA,0.205,0.191,0.186,nan,nan,0.355,nan,nan
-mistral-7B-instruct,Plan.,0.203,0.155,0.212,nan,nan,0.328,nan,nan
-mistral-7B-instruct,Relation.,0.238,0.402,0.310,nan,nan,0.659,nan,nan
-mistral-7B-instruct,average,0.186,0.174,0.177,nan,nan,0.383,nan,nan
+mistral-7B-it,MWP,0.154,0.108,0.127,nan,nan,0.349,nan,nan
+mistral-7B-it,MHQA,0.205,0.191,0.186,nan,nan,0.355,nan,nan
+mistral-7B-it,Plan.,0.203,0.155,0.212,nan,nan,0.328,nan,nan
+mistral-7B-it,Relation.,0.238,0.402,0.310,nan,nan,0.659,nan,nan
+mistral-7B-it,average,0.186,0.174,0.177,nan,nan,0.383,nan,nan

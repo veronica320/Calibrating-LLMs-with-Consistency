@@ -1,24 +1,25 @@
 
-// 1. What is the value of Sainsbury's?
-// Sainsbury's has a value of £17.6 billion.
-// 2. What is the value of Tesco?
-// Tesco has a value of £25.6 billion.
-// 3. What is the maximum amount that Sainsbury's can afford to buy Tesco?
-// Sainsbury's can afford to buy Tesco only if the value of Sainsbury's is less than or equal to the value of Tesco.
+// 1. What is Sainsbury's annual revenue in billions?
+// Sainsbury's annual revenue in billions is approximately 0.8.
+// 2. What is Tesco's annual revenue in billions?
+// Tesco's annual revenue in billions is approximately 2.
+// 3. What is 10^6 in binary?
+// The decimal representation of 10^6 is 1000. The binary representation of 1000 is 11111110.
 
 // Then, we represent these answers in Datalog:
-// 1. Sainsbury's has a value of £17.6 billion.
-.decl Has_value(Company:symbol, Value:float)
-Has_value("Sainsbury's", 17.6).
-// 2. Tesco has a value of £25.6 billion.
-Has_value("Tesco", 25.6).
-// 3. Sainsbury's can afford to buy Tesco only if the value of Sainsbury's is less than or equal to the value of Tesco.
-Sainsbury's can afford Tesco if and only if Has_value("Sainsbury's", value1), Has_value("Tesco", value2), value1 <= value2.
+// 1. Sainsbury's annual revenue in billions is approximately 0.8.
+.decl Annual_Revenue_in_Billions(Sainsbury:symbol, Billion:float)
+Annual_Revenue_in_Billions("Sainsbury", "0.8").
+// 2. Tesco's annual revenue in billions is approximately 2.
+.decl Annual_Revenue_in_Billions(Tesco:symbol, Billion:float)
+Annual_Revenue_in_Billions("Tesco", "2").
+// 3. What is 10^6 in binary?
+// The decimal representation of 10^6 is 1000. The binary representation of 1000 is 11111110.
+.decl Binary_Representation(Dec:float, Bits:list(bool))
+Binary_Representation(1000, ["1"("00")*binary2list("11111110")]).
 
 // Now, we derive the final answer: Could Sainsbury's buy Tesco?
-// The answer is Yes only if Sainsbury's has enough money to buy Tesco.
+// The answer is Yes only if Sainsbury's annual revenue is at least twice Tesco's annual revenue.
 .decl Answer()
-Answer() :- Sainsbury's can afford Tesco.
+Answer() :- Has_binary_representation(Annual_Revenue_in_Billions(Sainsbury), Bits), Has_binary_representation(Annual_Revenue_in_Billions(Tesco), Bits), Binary_Representation(Annual_Revenue_in_Billions(Sainsbury, Bits), Bits), Binary_Representation(Annual_Revenue_in_Billions(Tesco, Bits), Bits), Bits = ["1"("00")*binary2list("11111110")], Billion > Billion2.
 .output Answer
-
-

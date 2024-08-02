@@ -9,7 +9,7 @@ from itertools import product
 import csv
 
 if __name__ == "__main__":
-	LMs = ["code002", "gpt-3.5-turbo", "gpt4", "llama-7B", "llama-13B", "llama-70B", "mistral-7B", "mistral-7B-instruct", "olmo-7B",  "olmo-7B-it", "olmo-7B-it-rl"]
+	LMs = ["code002", "gpt-3.5-turbo", "gpt4", "llama-7B", "llama-13B", "llama-70B", "mistral-7B", "mistral-7B-it", "olmo-7B",  "olmo-7B-it", "olmo-7B-it-rl"]
 	prompt_names = ["standard","COT","LtM","noNL","NL+SL"]
 	dataset_names = [
 		"ASDIV",

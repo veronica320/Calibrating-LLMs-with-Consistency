@@ -26,7 +26,7 @@ LM_NAME_TO_SHORT_NAME = {
 	"llama-13B": "llama-13B",
 	"llama-70B": "llama-70B",
 	"mistral-7B": "mistral-7B",
-	"mistral-7B-instruct": "mistral-7B-instruct",
+	"mistral-7B-it": "mistral-7B-it",
 	"olmo-7B": "olmo-7B",
 }
 
@@ -38,7 +38,7 @@ LM_SHORT_NAME_TO_NAME = {
 	"llama-13B": "llama-13B",
 	"llama-70B": "llama-70B",
 	"mistral-7B": "mistral-7B",
-	"mistral-7B-instruct": "mistral-7B-instruct",
+	"mistral-7B-it": "mistral-7B-it",
 	"olmo-7B": "olmo-7B",
 }
 

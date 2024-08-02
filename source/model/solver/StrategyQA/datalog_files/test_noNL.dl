@@ -1,6 +1,7 @@
-.decl Has_market_cap(Company:symbol, Market_cap:float)
-Has_market_cap("Sainsbury's", 5.5).
-Has_market_cap("Tesco", 23.4).
+
+.decl Tesco_Value(Tesco:symbol), Sainsbury_Value(Sainsbury:symbol)
+Tesco_Value("Tesco Plc" hepatocytes) = 1000000.
+Sainsbury_Value("Sainsbury's Plc" hepatocytes) = 750000.
 .decl Answer()
-Answer() :- Has_market_cap("Sainsbury's", market_cap1), Has_market_cap("Tesco", market_cap2), market_cap1 > market_cap2.
+Answer() :- Sainsbury_Value(Sainsbury) <= Tesco_Value(Tesco) * 5, Tesco_Value("Tesco Plc") <= Sainsbury_Value(Sainsbury) * 2.
 .output Answer

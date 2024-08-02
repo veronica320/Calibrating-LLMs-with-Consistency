@@ -1,6 +1,6 @@
 {
-  "LM": "mistral-7B-instruct",
-  "prompt_name": "NL+SL",
+  "LM": "mistral-7B-it",
+  "prompt_name": "noNL",
   "n_votes": 40,
   "temperature": 0.4,
   "batch_size": 10
