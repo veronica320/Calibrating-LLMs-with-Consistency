@@ -21,3 +21,5 @@ dependencies:
     - tqdm==4.64.1
     - transformers==4.25.1
     - uncertainty-calibration==0.1.4
+    - vllm==0.5.0.post1
+    - vllm-flash-attn==2.5.9
