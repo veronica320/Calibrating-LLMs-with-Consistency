@@ -21,6 +21,7 @@ import os
 import signal
 import functools
 import re
+from vllm import LLM, SamplingParams
 
 # The following are packages/funtions for exponential backoff
 # (ref. https://platform.openai.com/docs/guides/rate-limits/retrying-with-exponential-backoff)
@@ -454,6 +455,14 @@ class Generator():
 			completion_objs = [choice.message for choice in choices]
 			completions = [completion.content for completion in completion_objs]
 			ppl_reciprocals = None
+
+		elif self.LM_short in ["llama-7B", "llama-13B", "llama-70B", "mistral-7B", "mistral-7B-it", "olmo-7B", "olmo-7B-sft","olmo-7B-it"]:
+			sampling_params = SamplingParams(temperature=0.7, n=40, stop=stop, max_tokens=1000, logprobs=1)
+			# llm = LLM(model=f"/cluster/work/sachan/shridhar/models/llama-70B", tensor_parallel_size=2)
+			outputs = self.llm.generate([prompt], sampling_params)
+			completions = [output.text for output in outputs[0].outputs]
+			ppl_reciprocals = [math.exp(output.cumulative_logprob / len(output.token_ids)) for output in outputs[0].outputs]
+		
 		else:
 			raise NotImplementedError(f"Model {LM} is not supported.")
 		return completions, ppl_reciprocals
